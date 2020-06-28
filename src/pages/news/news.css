@@ -1,0 +1,92 @@
+.bread {
+    padding: 22px 0px 22px;
+}
+
+.bread a,
+.bread span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    padding-right: 19px;
+}
+
+.news:nth-child(odd) {
+    background: #FFFAE8;
+}
+
+.news {
+    background: #FFF5CF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 0px;
+    position: relative;
+    z-index: 9;
+}
+
+.news_date {
+    padding: 0 5%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color-second);
+}
+
+.news_text {
+    padding-right: 10%;
+}
+
+.news_text_title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.news_text_info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--text-color);
+}
+
+.news_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--text-color);
+}
+
+.news_wrap {
+    padding-bottom: 180px;
+}
+
+.news:hover {
+    box-shadow: 0px 12px 25px rgba(62, 55, 29, 0.18);
+    z-index: 999;
+}
+
+
+/*
+.main_news:before {
+    content: 'Новость дня';
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 0px;
+    top: 0px;
+    color: #fff;
+    background: #EC8E00;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+}*/

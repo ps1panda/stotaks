@@ -1,0 +1,331 @@
+.drivers_page {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.drivers_page .wrap {
+    width: 800px;
+    margin-left: 0px;
+}
+
+.drivers_page .first_info_box {
+    margin-bottom: 0px;
+}
+
+.drivers_page .statiya {
+    border-bottom: 0px solid #e3e3e3;
+    margin-bottom: 160px;
+}
+
+.driver_register_page input {
+    border: none;
+    border-bottom: 2px solid var(--main-black-color);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color);
+    padding: 8px 20px;
+    position: relative;
+}
+
+.register_wrap {
+    margin-bottom: 100px;
+}
+
+.register_wrap_form p {
+    position: relative;
+}
+
+.register_wrap_form p:before {
+    content: '';
+    position: absolute;
+    background: url(../../images/input_icon.png) no-repeat center / cover;
+    bottom: 14px;
+    left: 0px;
+    width: 12px;
+    height: 12px;
+    z-index: 99;
+}
+
+.driver_register_page input::placeholder {
+    color: var(--text-color-second);
+}
+
+.register_wrap_form {
+    width: 40%;
+}
+
+.register_wrap_form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+}
+
+.register_wrap_form label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color);
+    margin-bottom: 7px;
+}
+
+.register_wrap_form input {
+    outline: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color);
+}
+
+.requery_info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color-second);
+}
+
+.requery_info span {
+    color: red;
+}
+
+.form_info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+    margin-top: 19px;
+}
+
+.policity_info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--text-color-second);
+}
+
+.policity_info a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--text-color-second);
+}
+
+.register_wrap_info {
+    background: #FFFDF5;
+    box-shadow: 0px 40px 80px rgba(53, 49, 33, 0.14);
+    padding: 60px 60px;
+}
+
+.register_wrap_info .mini_logo {
+    text-align: center;
+}
+
+.register_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.register_wrap_info_pic {
+    margin: 85px 0px 65px;
+    text-align: center;
+}
+
+.register_wrap_info_pic img {
+    width: 50%;
+}
+
+.register_wrap_info_title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 20px;
+    color: var(--text-color);
+}
+
+.register_wrap_info_desc {
+    margin-top: 39px;
+}
+
+.register_wrap_info_desc p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+}
+
+.register_wrap_info_desc li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+    list-style: none;
+    position: relative;
+}
+
+.register_wrap_info_desc li:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 13px;
+    left: -10px;
+    top: 8px;
+    background: var(--main-yellow-color);
+}
+
+.email_check {
+    text-align: center;
+    margin: 120px auto 180px;
+    width: 70%;
+}
+
+.email_check_info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+    margin: 60px 0 0 0;
+}
+
+.email_verification {
+    text-align: center;
+    margin: 120px auto 0;
+    width: 70%;
+    padding-bottom: 180px;
+}
+
+.email_verification .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    margin: 41px auto 0;
+}
+
+.email_verification_dopinfo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--text-color-second);
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.email_verification_dopinfo a {
+    color: var(--text-color-second);
+    font-weight: bold;
+}
+
+.email_verification a {
+    text-decoration: none;
+}
+
+.driver_anketa_info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.general_wrap legend {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    margin-bottom: 17px;
+}
+
+.general_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.general_wrap fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: calc(100% / 4);
+    margin-bottom: 36px;
+}
+
+.general_wrap label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.general_anketa_title {
+    margin-bottom: 36px;
+}
+
+.general_wrap [type="radio"]:checked,
+.general_wrap [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.general_wrap [type="radio"]:checked+label,
+.general_wrap [type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 22px;
+}
+
+.general_wrap [type="radio"]:checked+label:before,
+.general_wrap [type="radio"]:not(:checked)+label:before {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0px;
+    top: 2px;
+    /* Main Black */
+    border: 2px solid #131313;
+    box-sizing: border-box;
+    border-radius: 50%;
+    content: '';
+}
+
+.general_wrap [type="radio"]:checked+label:after,
+.general_wrap [type="radio"]:not(:checked)+label:after {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 6px;
+    top: 8px;
+    background: var(--main-yellow-color);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.general_wrap [type="radio"]:checked+label:after {
+    content: '';
+}
+
+.general_anketa {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #E3E3E3;
+}

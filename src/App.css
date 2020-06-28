@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --main-black-color: #131313;
+    --main-yellow-color: #FFCC00;
+    --main-hover-color: #FFA800;
+    --gray-bg-color: #F1EEE4;
+    --text-color: #2F2F2F;
+    --text-color-second: #82755B;
+}
+
+* {
+    font-family: 'Raleway', sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+.gray_bg {
+    background: var(--gray-bg-color);
+}
+
+.wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1.zag {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 20px;
+    color: var(--text-color);
+    margin-bottom: 69px;
+}
+
+.btn_gray {
+    display: flex;
+    flex-direction: row;
+    padding: 14px 38px;
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    background: #ECEAE5;
+    border: none !important;
+    margin: 28px 0px 15px;
+    box-shadow: 0px 12px 25px rgba(62, 55, 29, 0.18);
+    pointer-events: none;
+}
+
+.btn_gray.act_btn {
+    background: var(--main-yellow-color);
+    pointer-events: auto;
+}
+
+.alt_btn {
+    display: flex;
+    flex-direction: row;
+    padding: 14px 38px;
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    background: transparent;
+    border: none !important;
+    margin: 28px 0px 15px;
+    border: 1px solid #FFCC00;
+    pointer-events: none;
+}
+
+.mini_logo img {
+    width: 110px;
+}
+
+.zag_another {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--text-color);
+    position: relative;
+}
+
+.zag_another:before {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: -10px;
+    top: 1px;
+    content: '';
+    background: var(--main-yellow-color);
+}

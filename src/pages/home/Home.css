@@ -1,0 +1,149 @@
+.home_page__topinfo {
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    padding: 24px 0px;
+}
+
+.boxes {
+    padding: 120px 0px 116px;
+}
+
+.boxes_wrap {
+    background: #FFFFFF;
+    box-shadow: 0px 40px 80px rgba(53, 49, 33, 0.14);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: calc(100% / 5);
+    text-align: center;
+    padding: 41PX 0px 50px;
+}
+
+.box_text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 125%x;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.box:nth-child(1) {
+    background: #FFF2C2;
+}
+
+.box:nth-child(2) {
+    background: #FFF7D7;
+}
+
+.box:nth-child(3) {
+    background: #FFFAE8;
+}
+
+.box:nth-child(4) {
+    background: #FFF7D7;
+}
+
+.box:nth-child(5) {
+    background: #FFF2C2;
+}
+
+.box:nth-child(6) {
+    background: #FFEFB0;
+}
+
+.box:nth-child(7) {
+    background: #FFF5CF;
+}
+
+.box:nth-child(8) {
+    background: #FFF9E2;
+}
+
+.box:nth-child(9) {
+    background: #FFF5CF;
+}
+
+.box:nth-child(10) {
+    background: #FFEFB0;
+}
+
+.look_more {
+    padding-bottom: 143px;
+}
+
+.look_more h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.look_more p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 56px;
+    margin-top: 21px;
+}
+
+.look_more_info-name {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--text-color);
+}
+
+.look_more_info-desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--text-color);
+    margin: 3px 0px 8px;
+}
+
+.look_more_info-where {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+.look_more_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.look_more_info {
+    position: relative;
+    padding-left: 102px;
+}
+
+.look_more_info::before {
+    content: '';
+    background: url(../../images/play.png) no-repeat center /cover;
+    width: 86px;
+    height: 86px;
+    position: absolute;
+    left: 0px;
+    top: -10px;
+}
