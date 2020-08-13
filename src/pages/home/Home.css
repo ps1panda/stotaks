@@ -27,6 +27,10 @@
     padding: 41PX 0px 50px;
 }
 
+.box a {
+    text-decoration: none;
+}
+
 .box_text {
     font-family: Raleway;
     font-style: normal;
@@ -35,6 +39,7 @@
     line-height: 125%x;
     text-align: center;
     color: var(--text-color);
+    padding: 0 25px;
 }
 
 .box:nth-child(1) {
@@ -138,7 +143,11 @@
     padding-left: 102px;
 }
 
-.look_more_info::before {
+.look_more_info a {
+    text-decoration: none;
+}
+
+.look_more_info a::before {
     content: '';
     background: url(../../images/play.png) no-repeat center /cover;
     width: 86px;

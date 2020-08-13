@@ -27,6 +27,7 @@ export default class Header extends Component {
     this.setState({
       link:'partner_register'
     })
+    document.querySelector('.next_page').classList.add('act')
   }
   showRegpopup(){
     document.querySelector('.reg_popup').style.display = 'block'

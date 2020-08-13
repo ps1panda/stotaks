@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import './drivers.css';
 import FormViewd from './components/FormViewd';
-
+import Home from '../home/Home'
+import Driver_anketa from './Driver_anketa'
+import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 export default class Driverregister extends Component {
     constructor(props) {
         super(props)
@@ -23,7 +25,14 @@ export default class Driverregister extends Component {
                           <span>{this.state.page_title}</span>
                       </div>    
                       <FormViewd />
-                    </div>     
+                    </div>    
+                    <Router>
+                    <Switch>
+                        <Route exact path='/' component={Home} />      
+                        <Route exact path='/Driver_anketa' component={Driver_anketa} />     
+                                                    
+                    </Switch>
+                    </Router> 
             </div>
         )
     }
