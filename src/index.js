@@ -2,14 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Adminindex from './admin/index'
 import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render( 
-    <React.StrictMode>
+function Admin(props){
+    console.log(window.location.href.split('/')[3])
+    const adminIt = window.location.href.split('/')[3]
+    if(adminIt === 'admin'){
+        return (
+            <Adminindex />
+        )
        
+    }
+    return(
         <App />
-      
-    </React.StrictMode>,
+    )
+        
+}
+ReactDOM.render( 
+    
+       
+    <Admin adminIt={true} />,
     document.getElementById('root')
 );
 

@@ -1,3 +1,102 @@
 footer {
     background: #131313;
 }
+
+footer a,
+footer .middle {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0px 50px;
+}
+
+footer .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 73px 0px 39px;
+}
+
+footer .middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .middle div:not(:first-child) {
+    padding-top: 65px;
+}
+
+footer .middle div {
+    position: relative;
+}
+
+footer .middle a {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.geo_footer::before {
+    content: '';
+    background: url(../images/geo_icon.png) no-repeat center / 100%;
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: -26px;
+    left: 0px;
+}
+
+.email_footer::before {
+    content: '';
+    background: url(../images/email_icon.png) no-repeat center / 100%;
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: -26px;
+    left: 0px;
+}
+
+.phone_footer::before {
+    content: '';
+    background: url(../images/phone_icon.png) no-repeat center / 100%;
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: -26px;
+    left: 0px;
+}
+
+footer .bottom div:first-child {
+    color: #F1EEE4;
+    margin-right: 10vw;
+}
+
+footer .bottom,
+footer .bottom a {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+footer .bottom a:hover {
+    text-decoration: underline;
+}
+
+footer nav a {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+    background: transparent;
+}
+
+.admin footer {
+    display: none;
+}

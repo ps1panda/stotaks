@@ -11,6 +11,8 @@ import Wiki from './pages/wiki/Wiki'
 import Driverregister from './pages/drivers/Driverregister'
 import Partnerregister from './pages/partners/Partnerregister'
 import Driver_anketa from './pages/drivers/Driver_anketa'
+import Adminindex from './admin/index'
+
 export default class Pages extends Component {
     render() {
         return (
@@ -25,8 +27,7 @@ export default class Pages extends Component {
                 <Route exact path='/driver_register' component={Driverregister} />
                 <Route exact path='/partner_register' component={Partnerregister} />
                 <Route exact path='/Driver_anketa' component={Driver_anketa} />
-                
-                
+                <Route exact path='/admin/' component={Adminindex} />
             </Switch>
           </Router>  
         )
