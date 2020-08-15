@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import { YMaps, Map } from 'react-yandex-maps';
 import Filters from './Filters.js'
 
-export default class Taxopark extends Component {
+export default class Wash extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            kindfilter: 'taxopark'
+            kindfilter: 'wash'
         };
        
     };
@@ -17,10 +17,10 @@ export default class Taxopark extends Component {
                 <div className="wrap">
                     <div className="bread">
                         <a href="/"> Главная</a>
-                        <span>Таксопарки Москвы</span>
+                        <span>Мойка автомобилей такси</span>
                     </div>
 
-                    <h1 className='zag'>Таксопарки Москвы</h1>
+                    <h1 className='zag'>Мойка автомобилей такси</h1>
                     
                     <div className="Taxopark_wrap select_wrap">
                         <div className='filter'>

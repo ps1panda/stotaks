@@ -30,7 +30,7 @@ export default class Home extends Component {
                                 </a>
                             </div>
                             <div className="box">
-                                <a href='#'>
+                                <a href='../select/equipment'>
                                 <div className="box_pic">
                                     <img src={Icon2} alt=""/>
                                 </div>
@@ -38,7 +38,7 @@ export default class Home extends Component {
                                 </a>
                             </div>
                             <div className="box">
-                                <a href='#'>
+                                <a href='../select/service'>
                                 <div className="box_pic">
                                     <img src={Icon3} alt=""/>
                                 </div>
@@ -46,7 +46,7 @@ export default class Home extends Component {
                                 </a>
                             </div>
                             <div className="box">
-                                <a href='#'>
+                                <a href='../select/wash'>
                                 <div className="box_pic">
                                     <img src={Icon4} alt=""/>
                                 </div>
@@ -54,7 +54,7 @@ export default class Home extends Component {
                                 </a>
                             </div>
                             <div className="box">
-                                <a href='#'>
+                                <a href='../select/view'>
                                 <div className="box_pic">
                                     <img src={Icon5} alt=""/>
                                 </div>
@@ -62,7 +62,7 @@ export default class Home extends Component {
                                 </a>
                             </div>
                             <div className="box">
-                                <a href='#'>
+                                <a href='../select/autosalon'>
                                 <div className="box_pic">
                                     <img src={Icon6} alt=""/>
                                 </div>
@@ -70,7 +70,7 @@ export default class Home extends Component {
                                 </a>
                             </div>
                             <div className="box">
-                                <a href='#'>
+                                <a href='../select/autocredit'>
                                 <div className="box_pic">
                                     <img src={Icon7} alt=""/>
                                 </div>
@@ -78,7 +78,7 @@ export default class Home extends Component {
                                 </a>
                             </div>
                             <div className="box">
-                                <a href='#'>
+                                <a href='../select/autostrah'>
                                 <div className="box_pic">
                                     <img src={Icon8} alt=""/>
                                 </div>
@@ -86,7 +86,7 @@ export default class Home extends Component {
                                 </a>
                             </div>
                             <div className="box">
-                                <a href='#'>
+                                <a href='../select/documents'>
                                 <div className="box_pic">
                                     <img src={Icon9} alt=""/>
                                 </div>
@@ -94,7 +94,7 @@ export default class Home extends Component {
                                 </a>
                             </div>
                             <div className="box">
-                                <a href='#'>
+                                <a href='../select/hostels'>
                                 <div className="box_pic">
                                     <img src={Icon10} alt=""/>
                                 </div>

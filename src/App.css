@@ -103,6 +103,19 @@ h1.zag {
     align-items: flex-start;
 }
 
+.select_list {
+    padding: 0 24px;
+}
+
+.maps p {
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    /* Secondary Text Color */
+    color: #82755B;
+    margin-bottom: 4px;
+}
+
 .select_wrap table td {
     border-right: 0px
 }
@@ -118,8 +131,92 @@ h1.zag {
     border: 0px;
     border-bottom: 2px solid #131313;
     padding: 8px;
+    width: 100%;
 }
 
 .searchform {
     margin-bottom: 38px;
+}
+
+.filter label {
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 7px;
+}
+
+.filter legend {
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    /* Secondary Text Color */
+    color: #82755B;
+}
+
+.inner_filter_title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    /* Text Color */
+    color: #2F2F2F;
+}
+
+.filter_title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+    /* Text Color */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #2F2F2F;
+}
+
+.filter_title span:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFCC00;
+    cursor: pointer;
+}
+
+.filter,
+.maps {
+    width: 15vw;
+}
+
+.filter_box {
+    position: relative;
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+}
+
+.filter_box:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #EAE8E1;
+}
+
+.filter p {
+    margin-bottom: 10px;
+}
+
+.clearfilter {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    /* Main Yellow / Action Color */
+    color: #FFCC00;
+    margin-bottom: 38px !important;
+    cursor: pointer;
+}
+
+fieldset {
+    border: 0px;
 }

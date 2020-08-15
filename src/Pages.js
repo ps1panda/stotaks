@@ -12,6 +12,15 @@ import Driverregister from './pages/drivers/Driverregister'
 import Partnerregister from './pages/partners/Partnerregister'
 import Driver_anketa from './pages/drivers/Driver_anketa'
 import Taxopark from './pages/select/Taxopark.js'
+import Autocredit from './pages/select/Autocredit.js'
+import Autosalon from './pages/select/Autosalon.js'
+import Autostrah from './pages/select/Autostrah.js'
+import Documents from './pages/select/Documents.js'
+import Equipment from './pages/select/Equipment.js'
+import Hostels from './pages/select/Hostels.js'
+import Service from './pages/select/Service.js'
+import View from './pages/select/View.js'
+import Wash from './pages/select/Taxopark.js'
 
 import Adminindex from './admin/index'
 
@@ -31,6 +40,15 @@ export default class Pages extends Component {
                 <Route exact path='/Driver_anketa' component={Driver_anketa} />
                 <Route exact path='/admin/' component={Adminindex} />
                 <Route exact path='/select/taxopark' component={Taxopark} />
+                <Route exact path='/select/autocredit' component={Autocredit} />
+                <Route exact path='/select/autosalon' component={Autosalon} />
+                <Route exact path='/select/autostrah' component={Autostrah} />
+                <Route exact path='/select/documents' component={Documents} />
+                <Route exact path='/select/equipment' component={Equipment} />
+                <Route exact path='/select/hostels' component={Hostels} />
+                <Route exact path='/select/service' component={Service} />
+                <Route exact path='/select/view' component={View} />
+                <Route exact path='/select/wash' component={Wash} />
                 
             </Switch>
           </Router>  

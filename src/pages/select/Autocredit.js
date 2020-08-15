@@ -2,18 +2,18 @@ import React, { Component } from 'react'
 import { YMaps, Map } from 'react-yandex-maps';
 import Filters from './Filters.js'
 
-export default class Taxopark extends Component {
+export default class Autocredit extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            kindfilter: 'taxopark'
+            kindfilter: 'autocredit'
         };
        
     };
     render() {
         return (
-            <div className="Taxopark_page select_page">
+            <div className="Autocredit_page select_page">
                 <div className="wrap">
                     <div className="bread">
                         <a href="/"> Главная</a>
@@ -22,7 +22,7 @@ export default class Taxopark extends Component {
 
                     <h1 className='zag'>Таксопарки Москвы</h1>
                     
-                    <div className="Taxopark_wrap select_wrap">
+                    <div className="Autocredit_wrap select_wrap">
                         <div className='filter'>
                             <form action="" className="searchform">
                                 <h3>Поиск по названию</h3>
