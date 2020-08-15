@@ -8,7 +8,7 @@ export default class DriverList extends Component {
                     <a href="/admin"> Главная страница Админ панели</a>
                     <span>Анкеты водителей</span>
                 </div>
-                <div className="wrap_admin_box__inner">
+                <div className="wrap_admin_box__inner driverlist">
                     <h1>Анкеты водителей</h1>
                     <table border="0">
                         <tr className="driver_table__title">
@@ -19,7 +19,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                         Рассул Баликмакбетович Сафутдинов
                                     </a>
                                 </td>
@@ -30,7 +30,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Даниил Рудольфович Евстратьев
                                     </a>
                                 </td>
@@ -41,7 +41,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Анатолий Анатольевич Юрковец
                                     </a>
                                 </td>
@@ -52,7 +52,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Ахмадджон Фаизович Юрконмулов
                                     </a>
                                 </td>
@@ -63,7 +63,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                         Рассул Баликмакбетович Сафутдинов
                                     </a>
                                 </td>
@@ -74,7 +74,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                         Рассул Баликмакбетович Сафутдинов
                                     </a>
                                 </td>
@@ -85,7 +85,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Даниил Рудольфович Евстратьев
                                     </a>
                                 </td>
@@ -96,7 +96,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Анатолий Анатольевич Юрковец
                                     </a>
                                 </td>
@@ -107,7 +107,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Ахмадджон Фаизович Юрконмулов
                                     </a>
                                 </td>
@@ -118,7 +118,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                         Рассул Баликмакбетович Сафутдинов
                                     </a>
                                 </td>
@@ -129,7 +129,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                         Рассул Баликмакбетович Сафутдинов
                                     </a>
                                 </td>
@@ -140,7 +140,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Даниил Рудольфович Евстратьев
                                     </a>
                                 </td>
@@ -151,7 +151,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Анатолий Анатольевич Юрковец
                                     </a>
                                 </td>
@@ -162,7 +162,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Ахмадджон Фаизович Юрконмулов
                                     </a>
                                 </td>
@@ -173,7 +173,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                         Рассул Баликмакбетович Сафутдинов
                                     </a>
                                 </td>
@@ -184,7 +184,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                         Рассул Баликмакбетович Сафутдинов
                                     </a>
                                 </td>
@@ -195,7 +195,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Даниил Рудольфович Евстратьев
                                     </a>
                                 </td>
@@ -206,7 +206,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Анатолий Анатольевич Юрковец
                                     </a>
                                 </td>
@@ -217,7 +217,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                     Ахмадджон Фаизович Юрконмулов
                                     </a>
                                 </td>
@@ -228,7 +228,7 @@ export default class DriverList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="../admin/driveredit">
                                         Рассул Баликмакбетович Сафутдинов
                                     </a>
                                 </td>

@@ -96,3 +96,30 @@ h1.zag {
     content: '';
     background: var(--main-yellow-color);
 }
+
+.select_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.select_wrap table td {
+    border-right: 0px
+}
+
+.select_wrap h3 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+#searchinput {
+    border: 0px;
+    border-bottom: 2px solid #131313;
+    padding: 8px;
+}
+
+.searchform {
+    margin-bottom: 38px;
+}

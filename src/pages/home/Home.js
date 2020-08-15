@@ -22,7 +22,7 @@ export default class Home extends Component {
                     <div className="boxes">
                         <div className="boxes_wrap">                        
                             <div className="box">
-                                <a href='#'>
+                                <a href='../select/taxopark'>
                                 <div className="box_pic">
                                     <img src={Icon1} alt=""/>
                                 </div>

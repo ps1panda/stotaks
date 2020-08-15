@@ -135,9 +135,17 @@ button {
 .blue_btn {
     background: #2D87B9;
     border-radius: 2px;
-    background: #2D87B9;
-    border-radius: 2px;
     color: #fff;
+    border: none;
+    padding: 10px 30px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.white_btn {
+    background: #fff;
+    border-radius: 2px;
+    color: #2D87B9;
     border: none;
     padding: 10px 30px;
     margin-right: 5px;
@@ -263,6 +271,11 @@ select {
     line-height: 20px;
 }
 
+input[readonly='true'] {
+    border: 0px;
+    background: transparent;
+}
+
 .opred textarea[readonly='true'] {
     font-weight: normal;
     font-size: 14px;
@@ -272,4 +285,59 @@ select {
 
 textarea {
     outline: none;
+}
+
+.top_info {
+    background: #4F8C76;
+    /* Green shadow */
+    box-shadow: 0px 4px 8px rgba(22, 44, 36, 0.1), 0px 8px 16px rgba(22, 44, 36, 0.15), 0px 12px 40px rgba(22, 44, 36, 0.3);
+    border-radius: 4px;
+    color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.top_info .an_btn {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.driveredit span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.driveredit span label {
+    margin-right: 5px;
+}
+
+.driveredit form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.driveredit form>div:nth-child(1) {
+    margin-right: 6vw;
+}
+
+.top_info input {
+    color: #fff;
+}
+
+#top_info__name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    width: auto;
+}
+
+label[for='top_info__name'] {
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #8CC4B0;
+    margin-bottom: 7px;
 }
