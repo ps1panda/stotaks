@@ -17,10 +17,10 @@ export default class Autostrah extends Component {
                 <div className="wrap">
                     <div className="bread">
                         <a href="/"> Главная</a>
-                        <span>Автокредитование и автолизинг</span>
+                        <span>Услуги автострахования</span>
                     </div>
 
-                    <h1 className='zag'>Автокредитование и автолизинг</h1>
+                    <h1 className='zag'>Услуги автострахования</h1>
                     
                     <div className="Autostrah_wrap select_wrap">
                         <div className='filter'>
@@ -158,14 +158,7 @@ export default class Autostrah extends Component {
                             </tr>
                         </table>
                         </div>
-                        <div className='maps'>
-                        <YMaps>
-                            <div>
-                            <p>Выберите ближайший к Вам</p>
-                            <Map width='100%' height='400px' defaultState={{ center: [55.75, 37.57], zoom: 11 }} />
-                            </div>
-                        </YMaps>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

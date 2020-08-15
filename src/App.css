@@ -183,7 +183,7 @@ h1.zag {
 
 .filter,
 .maps {
-    width: 15vw;
+    width: 23vw;
 }
 
 .filter_box {
@@ -219,4 +219,8 @@ h1.zag {
 
 fieldset {
     border: 0px;
+}
+
+.select_list {
+    width: 100%;
 }
