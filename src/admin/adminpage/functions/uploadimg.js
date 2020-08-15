@@ -22,4 +22,5 @@ class Uploadimg extends React.Component {
     );
   }
 }
-module.exports = Uploadimg
+export default Uploadimg; 
+ 
