@@ -1031,6 +1031,171 @@ export default class Filters extends Component {
                             
         )  
     }
+    if(this.props.kindfilter === 'autostrah'){
+        return (
+            <div> 
+                <p>
+                <input type="checkbox" name="" id="use_anketa"/>
+                <label htmlFor="use_anketa">Использовать анкетные данные</label>
+                </p>
+                <p className='clearfilter'>
+                Сбросить фильтры
+                </p>
+                <div className='mck filter_box'>
+                            <p className="filter_title">
+                            <span>Метро МЦК </span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Автозаводская</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Зорге</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Стрешнево</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div className='okrug filter_box'>
+                            <p className="filter_title">
+                            <span>Административный округ Москвы</span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Центральный АО (ЦАО)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Северный АО (САО)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Северо-Восточный АО (СВАО)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Восточный АО (ВАО)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Юго-Восточный АО (ЮВАО)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Южный АО (ЮАО)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Юго-Западный АО (ЮЗАО)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Западный АО (ЗАО)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Северо-Западный АО (СЗАО)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Зеленоградский АО (ЗелАО)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Троицкий и Новомосковский АО (ТиНАО)</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div className='samomoyka filter_box'>
+                            <p className="filter_title">
+                            <span>Мойка самообслуживания</span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Круглосуточная работа</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Пылесос</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Оплата картой</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Корпоративное обслуживание</label>
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div className='persmoyla filter_box'>
+                            <p className="filter_title">
+                            <span>Мойка с персоналом (обычная)</span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Круглосуточная работа</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Полировка кузова</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Кафе/торговый автомат</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Оплата картой</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Экспресс мойка</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Химчистка салона</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Wi-Fi</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Корпоративное обслуживание</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div className='automoyka filter_box'>
+                            <p className="filter_title">
+                            <span>Автоматическая мойка</span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">да</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">нет</label>
+                                </p>
+            
+                               
+                            </div>
+                        </div>
+                        
+            </div>
+                            
+        )  
+    }
 
 
   }

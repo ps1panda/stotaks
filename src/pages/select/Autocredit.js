@@ -17,10 +17,10 @@ export default class Autocredit extends Component {
                 <div className="wrap">
                     <div className="bread">
                         <a href="/"> Главная</a>
-                        <span>Таксопарки Москвы</span>
+                        <span>Автокредитование и автолизинг</span>
                     </div>
 
-                    <h1 className='zag'>Таксопарки Москвы</h1>
+                    <h1 className='zag'>Автокредитование и автолизинг</h1>
                     
                     <div className="Autocredit_wrap select_wrap">
                         <div className='filter'>
