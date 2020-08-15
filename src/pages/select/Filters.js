@@ -862,164 +862,163 @@ export default class Filters extends Component {
     if(this.props.kindfilter === 'autocredit'){
         return (
             <div> 
-                <p>
-                <input type="checkbox" name="" id="use_anketa"/>
-                <label htmlFor="use_anketa">Использовать анкетные данные</label>
-                </p>
+               
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
-                <div className='mck filter_box'>
-                            <p className="filter_title">
-                            <span>Метро МЦК </span> <span className='filter_hide'>+</span>
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Автозаводская</label>
+                <div className="filter_select">
+                    <div className="credit_select">
+                        <p className='credit_select__title'>
+                            <input type="radio" name="credit_select" id=""/>
+                            <label htmlFor="">АВТОКРЕДИТОВАНИЕ</label>
+                            
+                        </p>
+                            <div className='sum_credit filter_box'>
+                                <p className="filter_title">
+                                <span>Сумма кредита</span> <span className='filter_hide'>+</span>
                                 </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Зорге</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Стрешнево</label>
-                                </p>
+                                <div>
+                                    <input type="range" id="sum_credit" name="sum_credit" min="500" max="11000" />
+                                </div>
                             </div>
-                        </div>
-                        <div className='okrug filter_box'>
-                            <p className="filter_title">
-                            <span>Административный округ Москвы</span> <span className='filter_hide'>+</span>
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Центральный АО (ЦАО)</label>
+                            <div className='first_sum filter_box'>
+                                <p className="filter_title">
+                                <span>Первоначальный взнос</span> <span className='filter_hide'>+</span>
                                 </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Северный АО (САО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Северо-Восточный АО (СВАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Восточный АО (ВАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Юго-Восточный АО (ЮВАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Южный АО (ЮАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Юго-Западный АО (ЮЗАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Западный АО (ЗАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Северо-Западный АО (СЗАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Зеленоградский АО (ЗелАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Троицкий и Новомосковский АО (ТиНАО)</label>
-                                </p>
+                                <div>
+                                    <input type="range" id="first_sum" name="first_sum" min="500" max="11000" />
+                                </div>
                             </div>
-                        </div>
-                        <div className='samomoyka filter_box'>
-                            <p className="filter_title">
-                            <span>Мойка самообслуживания</span> <span className='filter_hide'>+</span>
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Круглосуточная работа</label>
+                            <div className='credit_year filter_box'>
+                                <p className="filter_title">
+                                <span>Срок кредита</span> <span className='filter_hide'>+</span>
                                 </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Пылесос</label>
+                                <div>
+                                    <input type="range" id="credit_year" name="credit_year" min="500" max="11000" />
+                                </div>
+                            </div>
+                            <div className='musthave filter_box'>
+                                <p className="filter_title">
+                                <span>Требования по страхованию</span> <span className='filter_hide'>+</span>
                                 </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Оплата картой</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Корпоративное обслуживание</label>
-                                </p>
+                                <div>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">КАСКО</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">КАСКО и страхование жизни</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">не предъявляются(продать душу дъяволу)</label>
+                                    </p>
+                
                                 
+                                </div>
                             </div>
-                        </div>
-                        <div className='persmoyla filter_box'>
-                            <p className="filter_title">
-                            <span>Мойка с персоналом (обычная)</span> <span className='filter_hide'>+</span>
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Круглосуточная работа</label>
+                            <div className='ifcredit filter_box'>
+                                <p className="filter_title">
+                                <span>Условия кредитования</span> <span className='filter_hide'>+</span>
                                 </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Полировка кузова</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Кафе/торговый автомат</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Оплата картой</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Экспресс мойка</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Химчистка салона</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Wi-Fi</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Корпоративное обслуживание</label>
-                                </p>
+                                <div>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Без первоначального взноса</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Без справки о доходах</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Автомобили с пробегом</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Досрочное погашение</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Отсрочка платежа</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Страхование в кредит</label>
+                                    </p>
+                
+                                
+                                </div>
                             </div>
-                        </div>
-                        <div className='automoyka filter_box'>
-                            <p className="filter_title">
-                            <span>Автоматическая мойка</span> <span className='filter_hide'>+</span>
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">да</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">нет</label>
-                                </p>
-            
-                               
-                            </div>
-                        </div>
                         
+                    </div>
+                    <div className="lizing_select">
+                        <p className='credit_select__title'>
+                            <input type="radio" name="credit_select" id=""/>
+                            <label htmlFor="">АВТОЛИЗИНГ</label>
+                        </p>
+                            <div className='sum_credit filter_box'>
+                                <p className="filter_title">
+                                <span>Сумма кредита</span> <span className='filter_hide'>+</span>
+                                </p>
+                                <div>
+                                    <input type="range" id="sum_credit" name="sum_credit" min="500" max="11000" />
+                                </div>
+                            </div>
+                            <div className='first_sum filter_box'>
+                                <p className="filter_title">
+                                <span>Первоначальный взнос</span> <span className='filter_hide'>+</span>
+                                </p>
+                                <div>
+                                    <input type="range" id="first_sum" name="first_sum" min="500" max="11000" />
+                                </div>
+                            </div>
+                            <div className='credit_year filter_box'>
+                                <p className="filter_title">
+                                <span>Срок кредита</span> <span className='filter_hide'>+</span>
+                                </p>
+                                <div>
+                                    <input type="range" id="credit_year" name="credit_year" min="500" max="11000" />
+                                </div>
+                            </div>
+                            
+                            <div className='ifcredit filter_box'>
+                                <p className="filter_title">
+                                <span>Условия лизинга</span> <span className='filter_hide'>+</span>
+                                </p>
+                                <div>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Без первоначального взноса</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Работа с физлицами</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Оперативный лизинг</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Досрочный выкуп</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Отсрочка платежа</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor="">Автомобили с пробегом</label>
+                                    </p>
+                
+                                
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
             </div>
                             
         )  

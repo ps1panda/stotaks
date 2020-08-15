@@ -158,14 +158,7 @@ export default class Autocredit extends Component {
                             </tr>
                         </table>
                         </div>
-                        <div className='maps'>
-                        <YMaps>
-                            <div>
-                            <p>Выберите ближайший к Вам</p>
-                            <Map width='100%' height='400px' defaultState={{ center: [55.75, 37.57], zoom: 11 }} />
-                            </div>
-                        </YMaps>
-                        </div>
+
                     </div>
                 </div>
             </div>

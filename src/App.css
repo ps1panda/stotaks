@@ -132,6 +132,7 @@ h1.zag {
     border-bottom: 2px solid #131313;
     padding: 8px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .searchform {
@@ -223,4 +224,15 @@ fieldset {
 
 .select_list {
     width: 100%;
+}
+
+.credit_select__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    /* Text Color */
+    color: #2F2F2F;
+    text-transform: uppercase;
+    margin-bottom: 27px !important;
 }
