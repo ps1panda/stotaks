@@ -173,13 +173,13 @@ h1.zag {
     justify-content: space-between;
     align-items: center;
     color: #2F2F2F;
+    cursor: pointer;
 }
 
-.filter_title span:last-child {
+.filter_hide {
     font-size: 20px;
     font-weight: bold;
     color: #FFCC00;
-    cursor: pointer;
 }
 
 .filter,

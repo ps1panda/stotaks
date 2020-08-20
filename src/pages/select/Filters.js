@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import Mck from './filters/mck.js'
+import Okrug from './filters/okrug.js'
 export default class Filters extends Component {
   render() {
       if(this.props.kindfilter === 'taxopark'){
@@ -32,76 +33,9 @@ export default class Filters extends Component {
                     </div>
                 </div>
                 
-                <div className='mck filter_box'>
-                    <p className="filter_title">
-                    <span>Метро МЦК </span> <span className='filter_hide'>+</span>
-                    </p>
-                    <div>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Автозаводская</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Зорге</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Стрешнево</label>
-                        </p>
-                    </div>
-                </div>
-                <div className='okrug filter_box'>
-                    <p className="filter_title">
-                    <span>Административный округ Москвы</span> <span className='filter_hide'>+</span>
-                    </p>
-                    <div>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Центральный АО (ЦАО)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Северный АО (САО)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Северо-Восточный АО (СВАО)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Восточный АО (ВАО)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Юго-Восточный АО (ЮВАО)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Южный АО (ЮАО)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Юго-Западный АО (ЮЗАО)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Западный АО (ЗАО)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Северо-Западный АО (СЗАО)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Зеленоградский АО (ЗелАО)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Троицкий и Новомосковский АО (ТиНАО)</label>
-                        </p>
-                    </div>
-                </div>
+                <Mck />
+                <Okrug />
+
                 <div className='drive_treb filter_box'>
                     <p className="filter_title">
                     <span>Требования к водителям</span> <span className='filter_hide'>+</span>
@@ -516,76 +450,8 @@ export default class Filters extends Component {
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
-                <div className='mck filter_box'>
-                            <p className="filter_title">
-                            <span>Метро МЦК </span> <span className='filter_hide'>+</span>
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Автозаводская</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Зорге</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Стрешнево</label>
-                                </p>
-                            </div>
-                        </div>
-                        <div className='okrug filter_box'>
-                            <p className="filter_title">
-                            <span>Административный округ Москвы</span> <span className='filter_hide'>+</span>
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Центральный АО (ЦАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Северный АО (САО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Северо-Восточный АО (СВАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Восточный АО (ВАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Юго-Восточный АО (ЮВАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Южный АО (ЮАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Юго-Западный АО (ЮЗАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Западный АО (ЗАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Северо-Западный АО (СЗАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Зеленоградский АО (ЗелАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Троицкий и Новомосковский АО (ТиНАО)</label>
-                                </p>
-                            </div>
-                        </div>
+                <Mck />
+                <Okrug />
                         <div className='carname filter_box'>
                             <p className="filter_title">
                             <span>Марка автомобиля</span> <span className='filter_hide'>+</span>
@@ -704,77 +570,9 @@ export default class Filters extends Component {
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
-                <div className='mck filter_box'>
-                            <p className="filter_title">
-                            <span>Метро МЦК </span> <span className='filter_hide'>+</span>
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Автозаводская</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Зорге</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Стрешнево</label>
-                                </p>
-                            </div>
-                        </div>
-                        <div className='okrug filter_box'>
-                            <p className="filter_title">
-                            <span>Административный округ Москвы</span> <span className='filter_hide'>+</span>
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Центральный АО (ЦАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Северный АО (САО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Северо-Восточный АО (СВАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Восточный АО (ВАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Юго-Восточный АО (ЮВАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Южный АО (ЮАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Юго-Западный АО (ЮЗАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Западный АО (ЗАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Северо-Западный АО (СЗАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Зеленоградский АО (ЗелАО)</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Троицкий и Новомосковский АО (ТиНАО)</label>
-                                </p>
-                            </div>
-                        </div>
-                        <div className='samomoyka filter_box'>
+                <Mck />
+                <Okrug />
+                <div className='samomoyka filter_box'>
                             <p className="filter_title">
                             <span>Мойка самообслуживания</span> <span className='filter_hide'>+</span>
                             </p>
@@ -1123,8 +921,435 @@ export default class Filters extends Component {
                             
         )  
     }
-    
+    if(this.props.kindfilter === 'view'){
+        return (
+            <div> 
+                <p className='clearfilter'>
+                Сбросить фильтры
+                </p>
+                <Mck />
+                <Okrug />
+                <div className='med filter_box'>
+                            <p className="filter_title">
+                            <span>Медицинский </span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Выездные</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Удаленные (дистанционные)</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Послерейсовые</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Ведение документации</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Лицензирование медкабинетов</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Трудоустройство в штат медика</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Ежедневно</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Круглосуточно</label>
+                                </p>
+                            </div>
+                </div>
+                <div className='tech filter_box'>
+                            <p className="filter_title">
+                            <span>Технический </span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Выездные</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Ежедневно</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Ведение документации</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Аудит вопросов БДД</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Трудоустройство в штат специалиста по БДД</label>
+                                </p>                                
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Круглосуточно</label>
+                                </p>
+                            </div>
+                </div>            
+            
+            
+            
+               
+            </div>
+        )
+    }
+    if(this.props.kindfilter === 'equipment'){
+        return (
+            <div> 
+                <p className='clearfilter'>
+                Сбросить фильтры
+                </p>
+                <Mck />
+                <Okrug />
+                <div className='editauto filter_box'>
+                            <p className="filter_title">
+                            <span>Подготовка автомобилей для работы в такси </span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Оклейка цветной пленкой</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Перерегистрация в ГИБДД</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Брендирование автомобиля</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Установка лайтбокса</label>
+                                </p>
+                            </div>
+                </div>
+                <div className='gbo filter_box'>
+                            <p className="filter_title">
+                            <span>Установка ГБО </span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Пропан</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Метан</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Техническая экспертиза</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Оформление в ГИБДД</label>
+                                </p>
+                            </div>
+                </div>            
+                <div className='gps filter_box'>
+                            <p className="filter_title">
+                            <span>Установка ГЛОНАСС/GPS </span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Трекер</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Маяк</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Тревожная кнопка</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Дополнительное оборудование</label>
+                                </p>
+                            </div>
+                </div>    
+                <div className='dop filter_box'>
+                            <p className="filter_title">
+                            <span>Другое оборудования </span> <span className='filter_hide'>+</span>
+                            </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Автосигнализация</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Парктроники</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Видеорегистратор</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Камера заднего вида</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Световое оборудование</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Аудиосистема</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Мультимедийное оборудование</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Система радиосвязи</label>
+                                </p>
+                            </div>
+                </div>                             
+            
+            
+               
+            </div>
+        )
+    }
+    if(this.props.kindfilter === 'service'){
+        return (
+            <div> 
+                <p className='clearfilter'>
+                Сбросить фильтры
+                </p>
+                <Mck />
+                <Okrug />
+                <div className='all filter_box'>
+             
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Официальный дилерский центр</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Плановые ТО</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Кузовной ремонт и покраска</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Ремонт двигателя</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Ремонт трансмиссии</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Ремонт ходовой части</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Ремонт электрооборудования</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Ремонт и замена стекол</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Тонировка стекол</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Детейлинг</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Шиномонтаж</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Предрейсовые техосмотры</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Предпродажная подготовка</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Техпомощь на дороге</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Эвакуатор</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Корпоративное обслуживание</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Оплата картой</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Кафе</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Wi-Fi</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Круглосуточно</label>
+                                </p>
+                            </div>
+                </div>
 
+               
+            </div>
+        )
+    }
+    if(this.props.kindfilter === 'hostels'){
+        return (
+            <div> 
+                <p className='clearfilter'>
+                Сбросить фильтры
+                </p>
+                <Mck />
+                <Okrug />
+                <div className='price filter_box'>
+                    <p className="filter_title">
+                    <span>Стоимость в сутки (за ночь)</span> <span className='filter_hide'>+</span>
+                    </p>
+                    <div>
+                        <input type="range" id="price" name="price" min="500" max="11000" />
+                    </div>
+                </div>
+                <div className='uslugi filter_box'>
+                    <p className="filter_title">
+                        <span>Предоставляемые услуги</span> <span className='filter_hide'>+</span>
+                    </p>
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Корпоративное обслуживание</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Парковка </label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Питание</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Кухня</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Холодильник</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Телевизор</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Стиральная машина</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Круглосуточная регистрация</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Семейные номера</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Ежедневная уборка</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Wi-Fi</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Камера хранения</label>
+                                </p>
+                            </div>
+                </div>
+
+               
+            </div>
+        )
+    }
+    if(this.props.kindfilter === 'documents'){
+        return (
+            <div> 
+                <p className='clearfilter'>
+                Сбросить фильтры
+                </p>
+                <div className='all filter_box'>
+             
+                            <div>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Оформление разрешения на деятельность такси</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Изготовление электронной подписи</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Оформление дубликата разрешения на деятельность такси</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Путевая документация водителя</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Аннулирование разрешения на деятельность такси</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Подключение к таксопарку</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Открытие ИП</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id=""/>
+                                    <label htmlFor="">Подключение к агрегаторам такси</label>
+                                </p>
+                               
+                            </div>
+                </div>
+               
+            </div>
+        )
+    }
 
   }
 }

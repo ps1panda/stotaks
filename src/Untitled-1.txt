@@ -1,0 +1,60 @@
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Автомобили с пробегом</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Trade-in</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Выкуп автомобилей</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Рассрочка</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Автокредитование</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Автострахование</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Регистрация в ГИБДД</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Допоборудование</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Оклейка белой пленкой</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Брендирование</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Установка лайтбокса</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Установка ГЛОНАСС/GPS</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Установка ГБО</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Оформление разрешения такси</label>
+</p>
+<p>
+<input type="checkbox" name="" id=""/>
+<label htmlFor="">Подключение к таксопарку</label>
+</p>
