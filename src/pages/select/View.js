@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import { YMaps, Map } from 'react-yandex-maps';
 import Filters from './Filters.js'
+import Json from './Json/Json.js';
 
 export default class View extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            kindfilter: 'view'
+            kindfilter: 'view',
+            kind:'4'
         };
        
     };
@@ -35,128 +37,7 @@ export default class View extends Component {
                         </div>
                         <div className='select_list'>
 
-                        <table border="0" className='part_table'>
-                            <tr>                            
-                                    <td>
-                                        
-                                        ТАКСИ НОЧЬ ДЕНЬ
-                                        
-                                    </td>
-                                    
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-night.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        ТАКСИ РИТМ
-                                    </td>
-                                 
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-ritm.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        
-                                        ТАКСИ НОЧЬ ДЕНЬ
-                                        
-                                    </td>
-                                    
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-night.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        ТАКСИ РИТМ
-                                    </td>
-                                 
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-ritm.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        
-                                        ТАКСИ НОЧЬ ДЕНЬ
-                                        
-                                    </td>
-                                    
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-night.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        ТАКСИ РИТМ
-                                    </td>
-                                 
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-ritm.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        
-                                        ТАКСИ НОЧЬ ДЕНЬ
-                                        
-                                    </td>
-                                    
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-night.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        ТАКСИ РИТМ
-                                    </td>
-                                 
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-ritm.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        
-                                        ТАКСИ НОЧЬ ДЕНЬ
-                                        
-                                    </td>
-                                    
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-night.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        ТАКСИ РИТМ
-                                    </td>
-                                 
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-ritm.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        
-                                        ТАКСИ НОЧЬ ДЕНЬ
-                                        
-                                    </td>
-                                    
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-night.ru</td>
-                                
-                            </tr>
-                            <tr>                            
-                                    <td>
-                                        ТАКСИ РИТМ
-                                    </td>
-                                 
-                                    <td>+7 (926) 348 48 52</td>
-                                    <td>taxi-ritm.ru</td>
-                                
-                            </tr>
-                        </table>
+                        < Json kind={this.state.kind} />
                         </div>
                         <div className='maps'>
                         <YMaps>

@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
 import Mck from './filters/mck.js'
 import Okrug from './filters/okrug.js'
+import Hidefilter from './js/Hidefilter.js';
+import $ from "jquery";
 export default class Filters extends Component {
+    componentDidMount() {
+        $(function(){
+            var hide = 0;
+            $('.filter_title').click(function(){
+                $(this).parent().toggleClass('hidden_filter')
+                
+            })
+
+        })
+      }
   render() {
       if(this.props.kindfilter === 'taxopark'){
         return (
@@ -15,7 +27,7 @@ export default class Filters extends Component {
                 </p>
                 <div className='workrules filter_box'>
                     <p className="filter_title">
-                    <span>Условия работы</span> <span className='filter_hide'>+</span>
+                    <span>Условия работы</span> 
                     </p>
                     <div>
                         <p>
@@ -38,12 +50,12 @@ export default class Filters extends Component {
 
                 <div className='drive_treb filter_box'>
                     <p className="filter_title">
-                    <span>Требования к водителям</span> <span className='filter_hide'>+</span>
+                    <span>Требования к водителям</span> 
                     </p>
                     <div>
                         <div className="inner_filter">
                             <p className="inner_filter_title">
-                            <span>Гражанство </span> <span className='filter_hide'>+</span>
+                            <span>Гражанство </span> 
                             </p>
                             <div>
                                 <p>
@@ -70,7 +82,7 @@ export default class Filters extends Component {
                         </div>
                         <div className="inner_filter">
                             <p className="inner_filter_title">
-                            <span>Водительское удостоверение</span> <span className='filter_hide'>+</span>
+                            <span>Водительское удостоверение</span> 
                             </p>
                             <div>
                                 <p>
@@ -97,7 +109,7 @@ export default class Filters extends Component {
                         </div>
                         <div className="inner_filter">
                             <p className="inner_filter_title">
-                            <span>Водительский стаж</span> <span className='filter_hide'>+</span>
+                            <span>Водительский стаж</span> 
                             </p>
                             <div>
                                 <p>
@@ -113,7 +125,7 @@ export default class Filters extends Component {
                         </div>
                         <div className="inner_filter">
                             <p className="inner_filter_title">
-                            <span>Опыт работы в такси</span> <span className='filter_hide'>+</span>
+                            <span>Опыт работы в такси</span> 
                             </p>
                             <div>
                                 <p>
@@ -129,7 +141,7 @@ export default class Filters extends Component {
                         </div>
                         <div className="inner_filter">
                             <p className="inner_filter_title">
-                            <span> Наличие аккаунтов у агрегаторов такси</span> <span className='filter_hide'>+</span>
+                            <span> Наличие аккаунтов у агрегаторов такси</span> 
                             </p>
                             <div>
                                 <p>
@@ -163,12 +175,12 @@ export default class Filters extends Component {
                 </div>
                 <div className='autos filter_box'>
                     <p className="filter_title">
-                    <span>Автомобили</span> <span className='filter_hide'>+</span>
+                    <span>Автомобили</span> 
                     </p>
                     <div>
                     <div className="inner_filter">
                             <p className="inner_filter_title">
-                            <span> Модельный </span> <span className='filter_hide'>+</span>
+                            <span> Модельный </span> 
                             </p>
                             <div>
                                 <fieldset>
@@ -246,7 +258,7 @@ export default class Filters extends Component {
                                     </p>  
                                 </fieldset>
                                 <fieldset>
-                                    <legend>Комфорт +</legend>
+                                    <legend>Комфорт -</legend>
                                     <p>
                                     <input type="checkbox" name="" id=""/>
                                     <label htmlFor="">Toyota Camry</label>
@@ -326,7 +338,7 @@ export default class Filters extends Component {
                         
                         <div className="inner_filter">
                             <p className="inner_filter_title">
-                            <span>Характеристики автомобилей</span> <span className='filter_hide'>+</span>
+                            <span>Характеристики автомобилей</span> 
                             </p>
                             <div>
                                 <fieldset>
@@ -361,7 +373,7 @@ export default class Filters extends Component {
                 </div>
                 <div className='price filter_box'>
                     <p className="filter_title">
-                    <span>Стоимость аренды в сутки</span> <span className='filter_hide'>+</span>
+                    <span>Стоимость аренды в сутки</span> 
                     </p>
                     <div>
                         <input type="range" id="price" name="price" min="500" max="11000" />
@@ -369,7 +381,7 @@ export default class Filters extends Component {
                 </div>
                 <div className='deposit filter_box'>
                     <p className="filter_title">
-                    <span>Требования по депозиту</span> <span className='filter_hide'>+</span>
+                    <span>Требования по депозиту</span> 
                     </p>
                     <div>
                         <p>
@@ -392,7 +404,7 @@ export default class Filters extends Component {
                 </div>
                 <div className='agreg filter_box'>
                     <p className="filter_title">
-                    <span>Подключение к агрегаторам</span> <span className='filter_hide'>+</span>
+                    <span>Подключение к агрегаторам</span> 
                     </p>
                     <div>
                         <p>
@@ -423,7 +435,7 @@ export default class Filters extends Component {
                 </div>
                 <div className='dispech filter_box'>
                     <p className="filter_title">
-                    <span>Наличие диспетчерской / Техподдержки водителей</span> <span className='filter_hide'>+</span>
+                    <span>Наличие диспетчерской / Техподдержки водителей</span> 
                     </p>
                     <div>
                         <p>
@@ -454,7 +466,7 @@ export default class Filters extends Component {
                 <Okrug />
                         <div className='carname filter_box'>
                             <p className="filter_title">
-                            <span>Марка автомобиля</span> <span className='filter_hide'>+</span>
+                            <span>Марка автомобиля</span> 
                             </p>
                             <div>
                                 <p>
@@ -525,7 +537,7 @@ export default class Filters extends Component {
                         </div>
                         <div className='dylers filter_box'>
                             <p className="filter_title">
-                            <span>Официальный дилер</span> <span className='filter_hide'>+</span>
+                            <span>Официальный дилер</span> 
                             </p>
                             <div>
                                 <p>
@@ -540,7 +552,7 @@ export default class Filters extends Component {
                         </div>
                         <div className='yslugi filter_box'>
                             <p className="filter_title">
-                            <span>Предлагаемые услуги</span> <span className='filter_hide'>+</span>
+                            <span>Предлагаемые услуги</span> 
                             </p>
                             <div>
                                 <p>
@@ -574,7 +586,7 @@ export default class Filters extends Component {
                 <Okrug />
                 <div className='samomoyka filter_box'>
                             <p className="filter_title">
-                            <span>Мойка самообслуживания</span> <span className='filter_hide'>+</span>
+                            <span>Мойка самообслуживания</span> 
                             </p>
                             <div>
                                 <p>
@@ -598,7 +610,7 @@ export default class Filters extends Component {
                         </div>
                         <div className='persmoyla filter_box'>
                             <p className="filter_title">
-                            <span>Мойка с персоналом (обычная)</span> <span className='filter_hide'>+</span>
+                            <span>Мойка с персоналом (обычная)</span> 
                             </p>
                             <div>
                                 <p>
@@ -637,7 +649,7 @@ export default class Filters extends Component {
                         </div>
                         <div className='automoyka filter_box'>
                             <p className="filter_title">
-                            <span>Автоматическая мойка</span> <span className='filter_hide'>+</span>
+                            <span>Автоматическая мойка</span> 
                             </p>
                             <div>
                                 <p>
@@ -673,7 +685,7 @@ export default class Filters extends Component {
                         </p>
                             <div className='sum_credit filter_box'>
                                 <p className="filter_title">
-                                <span>Сумма кредита</span> <span className='filter_hide'>+</span>
+                                <span>Сумма кредита</span> 
                                 </p>
                                 <div>
                                     <input type="range" id="sum_credit" name="sum_credit" min="500" max="11000" />
@@ -681,7 +693,7 @@ export default class Filters extends Component {
                             </div>
                             <div className='first_sum filter_box'>
                                 <p className="filter_title">
-                                <span>Первоначальный взнос</span> <span className='filter_hide'>+</span>
+                                <span>Первоначальный взнос</span> 
                                 </p>
                                 <div>
                                     <input type="range" id="first_sum" name="first_sum" min="500" max="11000" />
@@ -689,7 +701,7 @@ export default class Filters extends Component {
                             </div>
                             <div className='credit_year filter_box'>
                                 <p className="filter_title">
-                                <span>Срок кредита</span> <span className='filter_hide'>+</span>
+                                <span>Срок кредита</span> 
                                 </p>
                                 <div>
                                     <input type="range" id="credit_year" name="credit_year" min="500" max="11000" />
@@ -697,7 +709,7 @@ export default class Filters extends Component {
                             </div>
                             <div className='musthave filter_box'>
                                 <p className="filter_title">
-                                <span>Требования по страхованию</span> <span className='filter_hide'>+</span>
+                                <span>Требования по страхованию</span> 
                                 </p>
                                 <div>
                                     <p>
@@ -718,7 +730,7 @@ export default class Filters extends Component {
                             </div>
                             <div className='ifcredit filter_box'>
                                 <p className="filter_title">
-                                <span>Условия кредитования</span> <span className='filter_hide'>+</span>
+                                <span>Условия кредитования</span> 
                                 </p>
                                 <div>
                                     <p>
@@ -758,7 +770,7 @@ export default class Filters extends Component {
                         </p>
                             <div className='sum_credit filter_box'>
                                 <p className="filter_title">
-                                <span>Сумма кредита</span> <span className='filter_hide'>+</span>
+                                <span>Сумма кредита</span> 
                                 </p>
                                 <div>
                                     <input type="range" id="sum_credit" name="sum_credit" min="500" max="11000" />
@@ -766,7 +778,7 @@ export default class Filters extends Component {
                             </div>
                             <div className='first_sum filter_box'>
                                 <p className="filter_title">
-                                <span>Первоначальный взнос</span> <span className='filter_hide'>+</span>
+                                <span>Первоначальный взнос</span> 
                                 </p>
                                 <div>
                                     <input type="range" id="first_sum" name="first_sum" min="500" max="11000" />
@@ -774,7 +786,7 @@ export default class Filters extends Component {
                             </div>
                             <div className='credit_year filter_box'>
                                 <p className="filter_title">
-                                <span>Срок кредита</span> <span className='filter_hide'>+</span>
+                                <span>Срок кредита</span> 
                                 </p>
                                 <div>
                                     <input type="range" id="credit_year" name="credit_year" min="500" max="11000" />
@@ -783,7 +795,7 @@ export default class Filters extends Component {
                             
                             <div className='ifcredit filter_box'>
                                 <p className="filter_title">
-                                <span>Условия лизинга</span> <span className='filter_hide'>+</span>
+                                <span>Условия лизинга</span> 
                                 </p>
                                 <div>
                                     <p>
@@ -830,7 +842,7 @@ export default class Filters extends Component {
                 </p>
                 <div className='kasko filter_box'>
                             <p className="filter_title">
-                            <span>КАСКО </span> <span className='filter_hide'>+</span>
+                            <span>КАСКО </span> 
                             </p>
                             <div>
                                 <p>
@@ -870,7 +882,7 @@ export default class Filters extends Component {
                         </div>
                         <div className='osago filter_box'>
                             <p className="filter_title">
-                            <span>ОСАГО</span> <span className='filter_hide'>+</span>
+                            <span>ОСАГО</span> 
                             </p>
                             <div>
                                 <p>
@@ -894,7 +906,7 @@ export default class Filters extends Component {
                         </div>
                         <div className='dosago filter_box'>
                             <p className="filter_title">
-                            <span>ДОСАГО</span> <span className='filter_hide'>+</span>
+                            <span>ДОСАГО</span> 
                             </p>
                             <div>
                                 <p>
@@ -931,7 +943,7 @@ export default class Filters extends Component {
                 <Okrug />
                 <div className='med filter_box'>
                             <p className="filter_title">
-                            <span>Медицинский </span> <span className='filter_hide'>+</span>
+                            <span>Медицинский </span> 
                             </p>
                             <div>
                                 <p>
@@ -970,7 +982,7 @@ export default class Filters extends Component {
                 </div>
                 <div className='tech filter_box'>
                             <p className="filter_title">
-                            <span>Технический </span> <span className='filter_hide'>+</span>
+                            <span>Технический </span> 
                             </p>
                             <div>
                                 <p>
@@ -1016,7 +1028,7 @@ export default class Filters extends Component {
                 <Okrug />
                 <div className='editauto filter_box'>
                             <p className="filter_title">
-                            <span>Подготовка автомобилей для работы в такси </span> <span className='filter_hide'>+</span>
+                            <span>Подготовка автомобилей для работы в такси </span> 
                             </p>
                             <div>
                                 <p>
@@ -1039,7 +1051,7 @@ export default class Filters extends Component {
                 </div>
                 <div className='gbo filter_box'>
                             <p className="filter_title">
-                            <span>Установка ГБО </span> <span className='filter_hide'>+</span>
+                            <span>Установка ГБО </span> 
                             </p>
                             <div>
                                 <p>
@@ -1061,8 +1073,8 @@ export default class Filters extends Component {
                             </div>
                 </div>            
                 <div className='gps filter_box'>
-                            <p className="filter_title">
-                            <span>Установка ГЛОНАСС/GPS </span> <span className='filter_hide'>+</span>
+                            <p className="filter_title" onClick={Hidefilter(this)}>
+                            <span>Установка ГЛОНАСС/GPS </span> 
                             </p>
                             <div>
                                 <p>
@@ -1085,7 +1097,7 @@ export default class Filters extends Component {
                 </div>    
                 <div className='dop filter_box'>
                             <p className="filter_title">
-                            <span>Другое оборудования </span> <span className='filter_hide'>+</span>
+                            <span>Другое оборудования </span> 
                             </p>
                             <div>
                                 <p>
@@ -1236,7 +1248,7 @@ export default class Filters extends Component {
                 <Okrug />
                 <div className='price filter_box'>
                     <p className="filter_title">
-                    <span>Стоимость в сутки (за ночь)</span> <span className='filter_hide'>+</span>
+                    <span>Стоимость в сутки (за ночь)</span> 
                     </p>
                     <div>
                         <input type="range" id="price" name="price" min="500" max="11000" />
@@ -1244,7 +1256,7 @@ export default class Filters extends Component {
                 </div>
                 <div className='uslugi filter_box'>
                     <p className="filter_title">
-                        <span>Предоставляемые услуги</span> <span className='filter_hide'>+</span>
+                        <span>Предоставляемые услуги</span> 
                     </p>
                             <div>
                                 <p>

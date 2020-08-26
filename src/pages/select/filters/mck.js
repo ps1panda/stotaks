@@ -5,7 +5,7 @@ export default class Mck extends Component {
     return (
     <div className='mck filter_box'>
         <p className="filter_title">
-        <span>Метро МЦК </span> <span className='filter_hide'>+</span>
+        <span>Метро МЦК </span> 
         </p>
         <div>
             <p>

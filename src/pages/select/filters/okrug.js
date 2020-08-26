@@ -5,7 +5,7 @@ export default class Okrug extends Component {
     return (
         <div className='okrug filter_box'>
         <p className="filter_title">
-        <span>Административный округ Москвы</span> <span className='filter_hide'>+</span>
+        <span>Административный округ Москвы</span> 
         </p>
         <div>
             <p>
