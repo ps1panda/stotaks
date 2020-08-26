@@ -258,3 +258,45 @@ fieldset {
 .hidden_filter .filter_title:after {
     content: '+';
 }
+
+.documents_page .td_groupNumber,
+.documents_page .td_rating,
+.documents_page .td_email {
+    display: none;
+}
+
+.Autostrah_page .td_groupNumber,
+.Autostrah_page .td_rating,
+.Autostrah_page .td_email {
+    display: none;
+}
+
+.Autocredit_page .td_groupNumber,
+.Autocredit_page .td_rating,
+.Autocredit_page .td_email {
+    display: none;
+}
+
+.hostels_page .td_groupNumber,
+.hostels_page .td_rating,
+.hostels_page .td_email {
+    display: none;
+}
+
+.service_page .td_groupNumber,
+.service_page .td_rating,
+.service_page .td_email {
+    display: none;
+}
+
+.equipment_page .td_groupNumber,
+.equipment_page .td_rating,
+.equipment_page .td_email {
+    display: none;
+}
+
+.View_page .td_groupNumber,
+.View_page .td_rating,
+.View_page .td_email {
+    display: none;
+}

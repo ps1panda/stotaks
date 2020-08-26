@@ -43,15 +43,17 @@ export default class Json extends Component {
         <table>
           <tbody>
             {pp.map((item, key) => (
-              <tr myattr={key}>
-                <td>
-                  {item.title}
+              <tr key={key}>
+                
+                <td className='td_title'>
+                <a href={item.id}>{item.title}</a>
+                  
                 </td>
-                <td> {item.email}</td>
-                <td> {item.phone}</td>
-                <td> {item.website}</td>
-                <td> {item.groupNumber}</td>
-                <td> {item.rating}</td>
+                <td  className='td_email'> {item.email}</td>
+                <td className='td_phone'> {item.phone}</td>
+                <td className='td_website'> {item.website}</td>
+                <td className='td_groupNumber'> {item.groupNumber}</td>
+                <td className='td_rating'> {item.rating}</td>
 
 
               </tr>

@@ -20,7 +20,7 @@ import Equipment from './pages/select/Equipment.js'
 import Hostels from './pages/select/Hostels.js'
 import Service from './pages/select/Service.js'
 import View from './pages/select/View.js'
-import Wash from './pages/select/Taxopark.js'
+import Wash from './pages/select/Wash.js'
 
 import Adminindex from './admin/index'
 

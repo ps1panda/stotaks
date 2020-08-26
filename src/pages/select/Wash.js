@@ -15,7 +15,7 @@ export default class Wash extends Component {
     };
     render() {
         return (
-            <div className="Taxopark_page select_page">
+            <div className="Wash_page select_page">
                 <div className="wrap">
                     <div className="bread">
                         <a href="/"> Главная</a>
@@ -24,7 +24,7 @@ export default class Wash extends Component {
 
                     <h1 className='zag'>Мойка автомобилей такси</h1>
                     
-                    <div className="Taxopark_wrap select_wrap">
+                    <div className="Wash_wrap select_wrap">
                         <div className='filter'>
                             <form action="" className="searchform">
                                 <h3>Поиск по названию</h3>
