@@ -26,13 +26,7 @@ export default class Driverregister extends Component {
                       </div>    
                       <FormViewd />
                     </div>    
-                    <Router>
-                    <Switch>
-                        <Route exact path='/' component={Home} />      
-                        <Route exact path='/Driver_anketa' component={Driver_anketa} />     
-                                                    
-                    </Switch>
-                    </Router> 
+                   
             </div>
         )
     }

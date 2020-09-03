@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import OrgPage from '../views/OrgPage.js'
 
 export default class Json extends Component {
   constructor(props) {
@@ -7,7 +9,8 @@ export default class Json extends Component {
       error: null,
       isLoaded: false,
       items: [],
-      kind: 1
+      kind: '',
+      kinds:['taxopark','austosalon','wash','documents','Equipment','service','hostels','autocredit','autostrah','views']
     };
   }
   componentDidMount() {
@@ -38,15 +41,20 @@ export default class Json extends Component {
       return <div>Загрузка...</div>;
     } else {
       const pp = items.filter(item => this.props.kind == item.kind)
-
+      console.log()
       return (
         <table>
           <tbody>
             {pp.map((item, key) => (
+              
               <tr key={key}>
                 
                 <td className='td_title'>
-                <a href={item.id}>{item.title}</a>
+                
+                <Router>
+                <Link to={'../organizations/' + item.id}>{item.title}</Link>
+                <Route exact path={'../organizations/'+ item.id} component={OrgPage} />
+                </Router>
                   
                 </td>
                 <td  className='td_email'> {item.email}</td>

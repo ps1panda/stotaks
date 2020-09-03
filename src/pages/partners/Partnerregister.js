@@ -26,13 +26,7 @@ export default class Partnerregister extends Component {
                       </div>    
                       <FormViewd />
                     </div>    
-                    <Router>
-                    <Switch>
-                        <Route exact path='/' component={Home} />      
-                        <Route exact path='/Partner_anketa' component={Partner_anketa} />     
-                                                    
-                    </Switch>
-                    </Router> 
+                 
             </div>
         )
     }

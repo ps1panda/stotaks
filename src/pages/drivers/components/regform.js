@@ -1,42 +1,100 @@
 import React, { Component } from 'react';
-import dr_icon from "../../../images/dr_icon.svg"
-import mini_logo from "../../../images/mini_logo.png"
+
 import InputMask from "react-input-mask";
+import RightSide from '../../../components/RightSide';
 export default class Regform extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
             whatshow: '2',
-            link: ''
+            link: '',
+            firstName:'',
+            lastName:'',
+            patronymic:'',
+            dayOfBirth:'',
+            phone:'',
+            email:'',
+            error: null,
+            isLoaded: false,
+            items: [],
         };
-       
+        this.FORMsend = this.FORMsend.bind(this)
+        this.TakeId = this.TakeId.bind(this)
+        //this.Action = this.Action.bind(this)
     };
+    TakeId (){
+        fetch("http://185.167.97.69:10101/api/drivers")
+        .then(res => res.json())
+        .then(
+          (result) => {
+            this.setState({
+              isLoaded: true,
+              items: result
+            });
+            const { error, isLoaded, items } = this.state;
+            console.log(items)
+            
+            const pp = items.filter(item => this.state.email == item.email)
+            console.log(pp)
+          },
+          (error) => {
+            this.setState({
+              isLoaded: true,
+              error
+            });
+          }
+        )
+    }
+    FORMsend (){
 
+        var data = {
+            
+            "firstName": this.state.firstName,
+            "lastName": this.state.lastName,
+            "patronymic": this.state.patronymic,
+            "dayOfBirth": this.state.dayOfBirth ,
+            "phone": this.state.phone,
+            "email": this.state.email
+         }
+      
+        fetch("http://185.167.97.69:10101/api/drivers", {
+            method: "POST",
+            headers: {
+               
+                'Content-Type': 'application/json'
+              },
+            body:  JSON.stringify(data)
+          })
+         .then(function(data){ 
+
+         });
+       this.TakeId()  
+    }
   render() {
       
     return (
        
         <div className="register_wrap">
             <div className="register_wrap_form">
-                <form action="" method="post">
+               
                 <p>
                     <label htmlFor="dr_name">Имя</label>
-                    <input type="text" name="driver_name" id="dr_name" placeholder="Введите имя"/>
+                    <input type="text" name="driver_name" id="dr_name" placeholder="Введите имя" onChange={(e) => this.setState({firstName: e.target.value})}/>
 
 
                 </p>
                 <p>
                     <label htmlFor="dr_secondname">Фамилия</label>
-                    <input type="text" name="driver_secondname" id="dr_secondname"  placeholder="Введите фамилию"/>
+                    <input type="text" name="driver_secondname" id="dr_secondname"  placeholder="Введите фамилию" onChange={(e) => this.setState({lastName: e.target.value})}/>
                 </p>
                 <p>
                     <label htmlFor="dr_surname">Отчество</label>
-                    <input type="text" name="driver_surname" id="dr_surname"  placeholder="Введите отчество"/>
+                    <input type="text" name="driver_surname" id="dr_surname"  placeholder="Введите отчество" onChange={(e) => this.setState({patronymic: e.target.value})}/>
                 </p>
                 <p>
                         <label htmlFor="dr_bday">Дата рождения</label>
-                        <InputMask mask="99.99.9999" defaultValue="__.__.____" alwaysShowMask='true'/>
+                        <InputMask mask="9999-99-99" defaultValue="____-__-__" alwaysShowMask='true' onChange={(e) => this.setState({dayOfBirth: e.target.value})}/>
                 </p>
                 <p>
                     <label htmlFor="dr_city">Местопроживания</label>
@@ -44,11 +102,11 @@ export default class Regform extends Component {
                 </p>
                 <p>
                     <label htmlFor="dr_phone"> Мобильный телефон</label>
-                    <InputMask mask="+7 (999)999-99-99" defaultValue="+7 (___)___-__-__"  alwaysShowMask='true'/>
+                    <InputMask mask="+7 (999)999-99-99" defaultValue="+7 (___)___-__-__"  alwaysShowMask='true' onChange={(e) => this.setState({phone: e.target.value})}/>
                 </p>
                 <p>
                     <label htmlFor="dr_email">Электронная почта</label>
-                    <input type="email" name="driver_email" id="dr_email" placeholder="Введите email"/>
+                    <input type="email" name="driver_email" id="dr_email" placeholder="Введите email" onChange={(e) => this.setState({email: e.target.value})}/>
                 </p>
 
                 <p>
@@ -65,39 +123,19 @@ export default class Regform extends Component {
                 <div className="form_info">
                     Для завершения регистрации подтвердите контактные данные
                 </div>
-                <input type="submit" className="btn_gray act_btn" onClick={() => { this.props.updateData(this.state.whatshow)}} value="подтвердить"/>
+                <input type="submit" className="btn_gray act_btn" onClick={this.FORMsend} value="подтвердить"/>
 
                 <div className="policity_info">
                     Нажимая "Подтвердить…" , Вы подтверждаете, что ознакомились
-                    с <a href=""> Политикой конфиденциальности</a> и даете свое согласие на обработку введенных Вами персональных данных
+                    с <a href="#"> Политикой конфиденциальности</a> и даете свое согласие на обработку введенных Вами персональных данных
                 </div>
-                </form>
             </div>
             
-            <div className="register_wrap_info">
-                <div className="mini_logo">
-                <img src={mini_logo} alt=""/>
-                </div>
-                <div className="register_wrap_info_pic">
-                <img src={dr_icon} alt=""/>
-                </div>
-                <div className="register_wrap_info_title">
-                Регистрация водителя
-                </div>
-                <div className="register_wrap_info_desc">
-                    <p>Пройдя регистрацию, Вы получите:</p>
-                    <ul>
-                    <li>быстрый поиск таксопарка по сохранённым данным;</li>
-                    <li>доступ к отзывам пользователей о наших партнёрах;</li>
-                    <li>возможность общения на форуме сообщества.</li>
-                    </ul>
-                </div>
-            
+          < RightSide />
                 
 
 
 
-        </div>
     </div>
     );
   }

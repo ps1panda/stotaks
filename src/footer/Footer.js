@@ -7,14 +7,14 @@ function Footer() {
         <div className="wrap">
           <div className='top'>
             <nav>
-              <a href="">Главная</a>
-              <a href="">О сообществе</a>
-              <a href="">Водителям</a>
-              <a href="">Партнерам</a>
-              <a href="">Энциклопедия такси</a>
-              <a href="">Новости такси</a>
-              <a href="">ЦОДД</a>
-              <a href="">Форум</a>
+              <a href="#">Главная</a>
+              <a href="#">О сообществе</a>
+              <a href="#">Водителям</a>
+              <a href="#">Партнерам</a>
+              <a href="#">Энциклопедия такси</a>
+              <a href="#">Новости такси</a>
+              <a href="#">ЦОДД</a>
+              <a href="#">Форум</a>
             </nav>
           </div>
           <div className='middle'>
@@ -48,13 +48,13 @@ function Footer() {
           <div className='bottom'>
             <div>© Столичное таксомоторное сообщество ООО «СТОТАКС». Все права защищен</div>
             <div>
-              <a href="">Политика конфиденциальности</a>
+              <a href="#">Политика конфиденциальности</a>
             </div>
             <div>
-                <a href="">Договор оферты</a>
+                <a href="#">Договор оферты</a>
             </div>
             <div>
-              <a href="">Публичная оферта</a>
+              <a href="#">Публичная оферта</a>
             </div>
           </div>
         </div>

@@ -3,6 +3,22 @@ import Mck from './filters/mck.js'
 import Okrug from './filters/okrug.js'
 import Hidefilter from './js/Hidefilter.js';
 import $ from "jquery";
+import Deposite from '../../fieldsets/deposite.jsx';
+import Agregators from '../../fieldsets/agregators.jsx';
+import Dispatcher from '../../fieldsets/dispatcher.jsx';
+import PricePerDay from '../../fieldsets/priceperday.jsx';
+import Work from '../../fieldsets/work.jsx';
+import Metro from '../../fieldsets/metro.jsx';
+import District from '../../fieldsets/district.jsx';
+import Citizenship from '../../fieldsets/citizenship.jsx';
+import Driverlicense from '../../fieldsets/driverlicense.jsx';
+import Drivingexperience from '../../fieldsets/drivingexperience.jsx';
+import Workexp from '../../fieldsets/workexp.jsx';
+import Auto from '../../fieldsets/auto.jsx';
+import Akpp from '../../fieldsets/akpp.jsx';
+import Fuel from '../../fieldsets/fuel.jsx';
+import CarName from '../../fieldsets/carname.jsx';
+import Ofdiler from '../../fieldsets/ofdiler.jsx';
 export default class Filters extends Component {
     componentDidMount() {
         $(function(){
@@ -26,27 +42,11 @@ export default class Filters extends Component {
                 Сбросить фильтры
                 </p>
                 <div className='workrules filter_box'>
-                    <p className="filter_title">
-                    <span>Условия работы</span> 
-                    </p>
-                    <div>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Зарплатный проект</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Аренда</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Только подключение к агрегаторам</label>
-                        </p>
-                    </div>
+                  <Work />
                 </div>
                 
-                <Mck />
-                <Okrug />
+                <Metro />
+                <District />
 
                 <div className='drive_treb filter_box'>
                     <p className="filter_title">
@@ -54,122 +54,19 @@ export default class Filters extends Component {
                     </p>
                     <div>
                         <div className="inner_filter">
-                            <p className="inner_filter_title">
-                            <span>Гражанство </span> 
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">РФ</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Беларусь</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Казахстан</label>
-                                </p>  
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Кыргызстан</label>
-                                </p>  
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Другое</label>
-                                </p>  
-                            </div>
+                         <Citizenship />
                         </div>
                         <div className="inner_filter">
-                            <p className="inner_filter_title">
-                            <span>Водительское удостоверение</span> 
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">РФ</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Беларусь</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Казахстан</label>
-                                </p>  
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Кыргызстан</label>
-                                </p>  
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Другое</label>
-                                </p>  
-                            </div>
+                          <Driverlicense />
                         </div>
                         <div className="inner_filter">
-                            <p className="inner_filter_title">
-                            <span>Водительский стаж</span> 
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="radio" name="group1" id=""/>
-                                    <label htmlFor="">Более 3-х лет</label>
-                                </p>
-                                <p>
-                                <input type="radio" name="group1" id=""/>
-                                    <label htmlFor="">Более 5-ти лет</label>
-                                </p>
-    
-                            </div>
+                           <Drivingexperience />
                         </div>
                         <div className="inner_filter">
-                            <p className="inner_filter_title">
-                            <span>Опыт работы в такси</span> 
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="radio" name="group1" id=""/>
-                                    <label htmlFor="">Обязателен</label>
-                                </p>
-                                <p>
-                                <input type="radio" name="group1" id=""/>
-                                    <label htmlFor="">Неважно</label>
-                                </p>
-    
-                            </div>
+                            <Workexp />
                         </div>
                         <div className="inner_filter">
-                            <p className="inner_filter_title">
-                            <span> Наличие аккаунтов у агрегаторов такси</span> 
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Яндекс.Такси</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Gett</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Ситимобил</label>
-                                </p>  
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Wheely</label>
-                                </p>  
-                                
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Собственная диспетчерская</label>
-                                </p>  
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Другое</label>
-                                </p>  
-                            </div>
+                            <Agregators />
                         </div>
                     </div>
                 </div>
@@ -182,158 +79,7 @@ export default class Filters extends Component {
                             <p className="inner_filter_title">
                             <span> Модельный </span> 
                             </p>
-                            <div>
-                                <fieldset>
-                                    <legend>Эконом</legend>
-                                    <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Hyundai Solaris</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Kia Rio</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Skoda Rapid</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Volkswagen Polo</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Ford Focus</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Chevrolet Cruze</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Nissan Almera</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Renault Logan</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Lada Vesta</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Другой</label>
-                                    </p>  
-                                </fieldset>
-                                <fieldset>
-                                    <legend>Комфорт</legend>
-                                    <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Skoda Octavia</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Hyundai i30</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Kia Ceed SW</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Chevrolet Captiva</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Ford Kuga</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Renault Fluence</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Другой</label>
-                                    </p>  
-                                </fieldset>
-                                <fieldset>
-                                    <legend>Комфорт -</legend>
-                                    <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Toyota Camry</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Kia Optima</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Hyundai Sonata</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Другой</label>
-                                    </p>  
-                                </fieldset>
-                                <fieldset>
-                                    <legend>Бизнес</legend>
-                                    <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Mercedes E-klasse</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">BMW 5er</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Audi A6</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Другой</label>
-                                    </p>  
-                                </fieldset>
-                                <fieldset>
-                                    <legend>Премиум</legend>
-                                    <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Mercedes S-klasse</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">BMW 7er</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Audi A8</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Другой</label>
-                                    </p>  
-                                </fieldset>
-                                <fieldset>
-                                    <legend>Минивэн</legend>
-                                    <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Ford Transit</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Volkswagen Transporter</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Fiat Ducato</label>
-                                    </p>  
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Другой</label>
-                                    </p>  
-                                </fieldset>
-                            </div>
+                            <Auto />
                         </div>
                         
                         <div className="inner_filter">
@@ -341,117 +87,25 @@ export default class Filters extends Component {
                             <span>Характеристики автомобилей</span> 
                             </p>
                             <div>
-                                <fieldset>
-                                    <legend>Трансмиссия</legend>
-                                    <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">АКП</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">МКПП</label>
-                                    </p>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>Топливо</legend>
-                                    <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Бензин</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Дизель</label>
-                                    </p>
-                                    <p>
-                                        <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">Газ/бензин</label>
-                                    </p>
-                                </fieldset>
+                                <Akpp />
+                                <Fuel />
+                               
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='price filter_box'>
-                    <p className="filter_title">
-                    <span>Стоимость аренды в сутки</span> 
-                    </p>
-                    <div>
-                        <input type="range" id="price" name="price" min="500" max="11000" />
-                    </div>
+                    <PricePerDay />
                 </div>
                 <div className='deposit filter_box'>
-                    <p className="filter_title">
-                    <span>Требования по депозиту</span> 
-                    </p>
-                    <div>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Без депозита</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Накопительный депозит</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">До 10 тыс.руб (при получении машины)</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Более 10 тыс.руб (при получении машины)</label>
-                        </p>
-                    </div>
+                    <Deposite />
+                   
                 </div>
                 <div className='agreg filter_box'>
-                    <p className="filter_title">
-                    <span>Подключение к агрегаторам</span> 
-                    </p>
-                    <div>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Яндекс.Такси</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Gett</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Ситимобил</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Wheely</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Собственная диспетчерская</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Другое</label>
-                        </p>
-                    </div>
+                        <Agregators />
                 </div>
                 <div className='dispech filter_box'>
-                    <p className="filter_title">
-                    <span>Наличие диспетчерской / Техподдержки водителей</span> 
-                    </p>
-                    <div>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Есть, круглосуточно</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Есть, в рабочее время</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="" id=""/>
-                            <label htmlFor="">Нет</label>
-                        </p>
-    
-                    </div>
+                    <Dispatcher />
                 </div>
             </div>
         );
@@ -462,93 +116,16 @@ export default class Filters extends Component {
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
-                <Mck />
-                <Okrug />
+               <Metro />
+                <District />
                         <div className='carname filter_box'>
-                            <p className="filter_title">
-                            <span>Марка автомобиля</span> 
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">AUDI</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">BMW</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">CHEVROLET</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">FORD</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">HYUNDAI</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">KIA</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">LADA</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">MAZDA</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">MERSEDES-BENZ</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">MITSUBISHI</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">NISSAN</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">RENAULT</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">SKODA</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">TOYOTA</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">VOLKSWAGEN</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">Другая</label>
-                                </p>
-                            </div>
+
+                            <CarName />
                         </div>
                         <div className='dylers filter_box'>
-                            <p className="filter_title">
-                            <span>Официальный дилер</span> 
-                            </p>
-                            <div>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">да</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" name="" id=""/>
-                                    <label htmlFor="">нет</label>
-                                </p>
-                            </div>
+                            <Ofdiler />
+                           
+                            
                         </div>
                         <div className='yslugi filter_box'>
                             <p className="filter_title">
@@ -582,8 +159,8 @@ export default class Filters extends Component {
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
-                <Mck />
-                <Okrug />
+               <Metro />
+                <District />
                 <div className='samomoyka filter_box'>
                             <p className="filter_title">
                             <span>Мойка самообслуживания</span> 
@@ -939,8 +516,8 @@ export default class Filters extends Component {
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
-                <Mck />
-                <Okrug />
+               <Metro />
+                <District />
                 <div className='med filter_box'>
                             <p className="filter_title">
                             <span>Медицинский </span> 
@@ -1024,8 +601,8 @@ export default class Filters extends Component {
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
-                <Mck />
-                <Okrug />
+               <Metro />
+                <District />
                 <div className='editauto filter_box'>
                             <p className="filter_title">
                             <span>Подготовка автомобилей для работы в такси </span> 
@@ -1146,8 +723,8 @@ export default class Filters extends Component {
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
-                <Mck />
-                <Okrug />
+               <Metro />
+                <District />
                 <div className='all filter_box'>
              
                             <div>
@@ -1244,8 +821,8 @@ export default class Filters extends Component {
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
-                <Mck />
-                <Okrug />
+               <Metro />
+                <District />
                 <div className='price filter_box'>
                     <p className="filter_title">
                     <span>Стоимость в сутки (за ночь)</span> 

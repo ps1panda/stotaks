@@ -17,11 +17,7 @@ export default class Autocredit extends Component {
         return (
             <div className="Autocredit_page select_page">
                 <div className="wrap">
-                    <div className="bread">
-                        
-                        <a href="/"> Главная</a>
-                        <span>Автокредитование и автолизинг</span>
-                    </div>
+                  
 
                     <h1 className='zag'>Автокредитование и автолизинг</h1>
                     

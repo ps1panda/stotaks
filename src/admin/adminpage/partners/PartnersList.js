@@ -19,7 +19,7 @@ export default class PartnersList extends Component {
                             <option value="all">Все</option>
                             <option value="all">Все</option>
                         </select>
-                        <a href="" className='blue_btn'>Добавить организацию</a>
+                        <a href="#" className='blue_btn'>Добавить организацию</a>
                     </div>
                     <table border="0" className='part_table'>
                         <tr className="partners_table__title">
@@ -33,7 +33,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -47,7 +47,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ РИТМ
                                     </a>
                                 </td>
@@ -61,7 +61,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ ШОКОЛАД
                                     </a>
                                 </td>
@@ -75,7 +75,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -89,7 +89,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -103,7 +103,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ РИТМ
                                     </a>
                                 </td>
@@ -117,7 +117,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ ШОКОЛАД
                                     </a>
                                 </td>
@@ -131,7 +131,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -145,7 +145,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -159,7 +159,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ РИТМ
                                     </a>
                                 </td>
@@ -173,7 +173,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ ШОКОЛАД
                                     </a>
                                 </td>
@@ -187,7 +187,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -201,7 +201,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -215,7 +215,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ РИТМ
                                     </a>
                                 </td>
@@ -229,7 +229,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ ШОКОЛАД
                                     </a>
                                 </td>
@@ -243,7 +243,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -257,7 +257,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -271,7 +271,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ РИТМ
                                     </a>
                                 </td>
@@ -285,7 +285,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ ШОКОЛАД
                                     </a>
                                 </td>
@@ -299,7 +299,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -313,7 +313,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -327,7 +327,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -341,7 +341,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -355,7 +355,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -369,7 +369,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -383,7 +383,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>
@@ -397,7 +397,7 @@ export default class PartnersList extends Component {
                         </tr>
                         <tr>                            
                                 <td>
-                                    <a href="">
+                                    <a href="#">
                                     ТАКСИ НОЧЬ ДЕНЬ
                                     </a>
                                 </td>

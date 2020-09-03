@@ -18,7 +18,11 @@
     margin-bottom: 160px;
 }
 
-.driver_register_page input {
+.anketa_wrap {
+    width: 100%;
+}
+
+input {
     border: none;
     border-bottom: 2px solid var(--main-black-color);
     font-style: normal;
@@ -264,7 +268,7 @@
     margin-bottom: 50px;
 }
 
-.general_wrap legend {
+.anketa legend {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -273,15 +277,22 @@
     margin-bottom: 17px;
 }
 
-.general_wrap {
+.anketa,
+.anketa_wrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-direction: column;
 }
 
-.general_wrap fieldset {
+.anketa_wrap {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.anketa.general_anketa fieldset {
     border: none;
     display: flex;
     flex-direction: column;
@@ -291,7 +302,13 @@
     margin-bottom: 36px;
 }
 
-.general_wrap label {
+.gray_an {
+    color: #82755B !important;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.anketa label {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -300,29 +317,29 @@
     margin-bottom: 5px;
 }
 
-.general_anketa_title {
+.anketa_title {
     margin-bottom: 36px;
 }
 
-.general_wrap [type="radio"]:checked,
-.general_wrap [type="radio"]:not(:checked) {
+.anketa [type="radio"]:checked,
+.anketa [type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
 
-.general_wrap [type="radio"]:checked+label,
-.general_wrap [type="radio"]:not(:checked)+label {
+.anketa [type="radio"]:checked+label,
+.anketa [type="radio"]:not(:checked)+label {
     position: relative;
-    padding-left: 22px;
+    padding-left: 25px;
 }
 
-.general_wrap [type="radio"]:checked+label:before,
-.general_wrap [type="radio"]:not(:checked)+label:before {
+.anketa [type="radio"]:checked+label:before,
+.anketa [type="radio"]:not(:checked)+label:before {
     position: absolute;
     width: 18px;
     height: 18px;
     left: 0px;
-    top: 2px;
+    top: -1px;
     /* Main Black */
     border: 2px solid #131313;
     box-sizing: border-box;
@@ -330,23 +347,110 @@
     content: '';
 }
 
-.general_wrap [type="radio"]:checked+label:after,
-.general_wrap [type="radio"]:not(:checked)+label:after {
+.anketa [type="radio"]:checked+label:after,
+.anketa [type="radio"]:not(:checked)+label:after {
     position: absolute;
     width: 6px;
     height: 6px;
     left: 6px;
-    top: 8px;
+    top: 5px;
     background: var(--main-yellow-color);
     box-sizing: border-box;
     border-radius: 50%;
 }
 
-.general_wrap [type="radio"]:checked+label:after {
+.anketa [type="radio"]:checked+label:after {
     content: '';
 }
 
-.general_anketa {
+.anketa {
     padding-bottom: 20px;
     border-bottom: 2px solid #E3E3E3;
+}
+
+.wishes {
+    margin-top: 52px;
+}
+
+.general_anketa_title {
+    margin-bottom: 36px;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:checked+label,
+[type="checkbox"]:not(:checked)+label {
+    position: relative;
+    padding-left: 25px;
+}
+
+[type="checkbox"]:checked+label:before,
+[type="checkbox"]:not(:checked)+label:before {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0px;
+    top: -1px;
+    /* Main Black */
+    border: 2px solid #131313;
+    box-sizing: border-box;
+    border-radius: 0%;
+    content: '';
+}
+
+[type="checkbox"]:checked+label:after,
+[type="checkbox"]:not(:checked)+label:after {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 6px;
+    top: 8px;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 0%;
+}
+
+[type="checkbox"]:checked+label:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0%;
+    left: 1%;
+    background: url(../../images/Check.png) no-repeat center / 100%;
+    color: var(--main-yellow-color);
+}
+
+.wishes .anketa_wrap {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.anketa_wrap__oneline,
+.anketa_wrap__twoline>fieldset,
+.anketa_wrap__threeline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 38px;
+}
+
+.anketa_wrap__twoline {
+    display: block;
+    width: 100%;
+}
+
+fieldset p {
+    margin-bottom: 9px;
+}
+
+.driver_anketa_page .policity_info {
+    width: 35%;
+    margin-bottom: 136px;
 }

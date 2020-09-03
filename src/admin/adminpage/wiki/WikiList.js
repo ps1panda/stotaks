@@ -11,7 +11,7 @@ export default class WikiList extends Component {
             <div className="wrap_admin_box__inner">
                 <div className="top_info">
                 <h1>Энциклопедия такси</h1>
-                <a href="" className='blue_btn'>Добавить определение</a>
+                <a href="#" className='blue_btn'>Добавить определение</a>
                 </div>
                 
 

@@ -5,7 +5,6 @@ import logo from '../images/logo.svg'
 import logo2 from '../images/Logo_black.png'
 
 
-
 export default class Header extends Component {
   constructor(props) {
     super(props)

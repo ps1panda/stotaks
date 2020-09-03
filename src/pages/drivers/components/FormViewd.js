@@ -23,7 +23,7 @@ export default class FormViewd extends Component {
             return ( <Regform updateData={this.updateData}/>
             )
         } else if (this.state.whatshow === '2') {
-            return ( <Driververyfication />
+            return ( <Driververyfication updateData={this.updateData}/>
             )
         } else if (this.state.whatshow === '3') {
             return ( <Emailverification />

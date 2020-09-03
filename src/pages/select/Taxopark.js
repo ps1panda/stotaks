@@ -17,10 +17,7 @@ export default class Taxopark extends Component {
         return (
             <div className="Taxopark_page select_page">
                 <div className="wrap">
-                    <div className="bread">
-                        <a href="/"> Главная</a>
-                        <span>Таксопарки Москвы</span>
-                    </div>
+                   
 
                     <h1 className='zag'>Таксопарки Москвы</h1>
                     

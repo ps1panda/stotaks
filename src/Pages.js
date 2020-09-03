@@ -11,6 +11,7 @@ import Wiki from './pages/wiki/Wiki'
 import Driverregister from './pages/drivers/Driverregister'
 import Partnerregister from './pages/partners/Partnerregister'
 import Driver_anketa from './pages/drivers/Driver_anketa'
+import Partner_anketa from './pages/partners/Partner_anketa'
 import Taxopark from './pages/select/Taxopark.js'
 import Autocredit from './pages/select/Autocredit.js'
 import Autosalon from './pages/select/Autosalon.js'
@@ -21,6 +22,7 @@ import Hostels from './pages/select/Hostels.js'
 import Service from './pages/select/Service.js'
 import View from './pages/select/View.js'
 import Wash from './pages/select/Wash.js'
+import Layout from './pages/partners/anketas/layout'
 
 import Adminindex from './admin/index'
 
@@ -30,14 +32,15 @@ export default class Pages extends Component {
             <Router>
             <Switch>
                 <Route exact path='/' component={Home} />
-                <Route exact path='/News' component={News} />
-                <Route exact path='/About' component={About} />
-                <Route exact path='/Drivers' component={Drivers} />
-                <Route exact path='/Partners' component={Partners} />
-                <Route exact path='/Wiki' component={Wiki} />
+                <Route exact path='/news' component={News} />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/drivers' component={Drivers} />
+                <Route exact path='/partners' component={Partners} />
+                <Route exact path='/wiki' component={Wiki} />
                 <Route exact path='/driver_register' component={Driverregister} />
                 <Route exact path='/partner_register' component={Partnerregister} />
-                <Route exact path='/Driver_anketa' component={Driver_anketa} />
+                <Route exact path='/driver_anketa' component={Driver_anketa} />
+                <Route exact path='/partner_anketa' component={Partner_anketa} />                
                 <Route exact path='/admin/' component={Adminindex} />
                 <Route exact path='/select/taxopark' component={Taxopark} />
                 <Route exact path='/select/autocredit' component={Autocredit} />
@@ -49,6 +52,7 @@ export default class Pages extends Component {
                 <Route exact path='/select/service' component={Service} />
                 <Route exact path='/select/view' component={View} />
                 <Route exact path='/select/wash' component={Wash} />
+                <Route exact path='/ankets/:ankets' component={Layout} />
                 
             </Switch>
           </Router>  
