@@ -25,6 +25,7 @@ import Wash from './pages/select/Wash.js'
 import Layout from './pages/partners/anketas/layout'
 
 import Adminindex from './admin/index'
+import OrgPageLayout from './pages/orgpage/orgpagelayout';
 
 export default class Pages extends Component {
     render() {
@@ -53,6 +54,7 @@ export default class Pages extends Component {
                 <Route exact path='/select/view' component={View} />
                 <Route exact path='/select/wash' component={Wash} />
                 <Route exact path='/ankets/:ankets' component={Layout} />
+                <Route exact path='/organizations/:organization' component={OrgPageLayout} />
                 
             </Switch>
           </Router>  

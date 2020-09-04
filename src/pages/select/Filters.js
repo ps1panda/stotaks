@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Mck from './filters/mck.js'
-import Okrug from './filters/okrug.js'
+
 import Hidefilter from './js/Hidefilter.js';
 import $ from "jquery";
 import Deposite from '../../fieldsets/deposite.jsx';

@@ -300,3 +300,115 @@ fieldset {
 .View_page .td_email {
     display: none;
 }
+
+.tabs .tab {
+    background: #FFFDF5;
+    box-shadow: 0px 12px 25px rgba(62, 55, 29, 0.18);
+    font-size: 18px;
+    line-height: 20px;
+    color: #2F2F2F;
+    padding: 17px 0px;
+    margin: 4px;
+    text-align: center;
+    width: 33%;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab_active {
+    background: #EC8E00 !important;
+}
+
+.tab_active span {
+    color: #fff !important;
+}
+
+.rewiews li {
+    margin-bottom: 32px;
+    list-style: none;
+}
+
+.rewiews_name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    /* Text Color */
+    color: #2F2F2F;
+}
+
+.rewiews_text {
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    /* Text Color */
+    color: #2F2F2F;
+    margin: 6px 0px 3px;
+}
+
+.rewiews_date {
+    font-size: 12px;
+    line-height: 20px;
+    color: #82755B;
+}
+
+.newrewiew [type='submit'] {
+    outline: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color);
+    background: var(--main-yellow-color);
+    border-bottom: 0px;
+    margin: 24px 0px 36px;
+}
+
+.newrewiew textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 19px 25px;
+    border: 2px solid #BCB8AA;
+    box-sizing: border-box;
+}
+
+.top_box {
+    border-bottom: 2px solid #EAE8E1;
+    padding-bottom: 30px;
+    margin-bottom: 53px;
+}
+
+.newrewiew p {
+    margin: 0px 0px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    /* Text Color */
+    color: #2F2F2F;
+}
+
+.tabs {
+    margin-bottom: 40px;
+}
+
+.organization_page__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.main_box {
+    width: 60%;
+}
+
+.sidebar {
+    width: 35%;
+}

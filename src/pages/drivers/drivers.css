@@ -321,20 +321,20 @@ input {
     margin-bottom: 36px;
 }
 
-.anketa [type="radio"]:checked,
-.anketa [type="radio"]:not(:checked) {
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
 
-.anketa [type="radio"]:checked+label,
-.anketa [type="radio"]:not(:checked)+label {
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
     position: relative;
     padding-left: 25px;
 }
 
-.anketa [type="radio"]:checked+label:before,
-.anketa [type="radio"]:not(:checked)+label:before {
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -347,8 +347,8 @@ input {
     content: '';
 }
 
-.anketa [type="radio"]:checked+label:after,
-.anketa [type="radio"]:not(:checked)+label:after {
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
     position: absolute;
     width: 6px;
     height: 6px;
@@ -359,7 +359,7 @@ input {
     border-radius: 50%;
 }
 
-.anketa [type="radio"]:checked+label:after {
+[type="radio"]:checked+label:after {
     content: '';
 }
 

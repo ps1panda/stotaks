@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import OrgPage from '../views/OrgPage.js'
+
 
 export default class Json extends Component {
   constructor(props) {
@@ -51,10 +51,10 @@ export default class Json extends Component {
                 
                 <td className='td_title'>
                 
-                <Router>
-                <Link to={'../organizations/' + item.id}>{item.title}</Link>
-                <Route exact path={'../organizations/'+ item.id} component={OrgPage} />
-                </Router>
+                
+           
+                <a href={'../organizations/'+ item.id}>{item.title}</a>
+                
                   
                 </td>
                 <td  className='td_email'> {item.email}</td>
