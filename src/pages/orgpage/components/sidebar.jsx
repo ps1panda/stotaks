@@ -37,7 +37,7 @@ export default class Sidebar extends Component {
           return <div>Загрузка...</div>;
         } else {
           
-          console.log(items.contactDetails.additionalPhones)
+          console.log(items.contactDetails)
           return (
             <div className='sideber'>
             <div className='logotip'>
