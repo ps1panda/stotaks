@@ -24,12 +24,6 @@ header {
     position: relative;
 }
 
-@media(max-width:980px) {
-    .header_top-text {
-        display: none;
-    }
-}
-
 .header_top-text::before {
     position: absolute;
     width: 4px;
@@ -298,4 +292,8 @@ header [type="radio"]:checked+label {
 .admin_header__info__dop___logout {
     font-size: 12px;
     line-height: 16px;
+}
+
+.burger {
+    display: none;
 }

@@ -1,5 +1,7 @@
 import React from 'react';
+import './media.css';
 import './App.css';
+
 import Header from './header/Header'
 import Footer from './footer/Footer'
 import Pages from './Pages';

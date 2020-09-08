@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import './header.css';
 import logo from '../images/logo.svg'
+import burger from '../images/Menu.png'
 import logo2 from '../images/Logo_black.png'
 
 
@@ -10,11 +11,13 @@ export default class Header extends Component {
     super(props)
   
     this.state = {
-       link:''
+       link:'',
+       open:0
     };
     this.handleClick1 = this.handleClick1.bind(this)
     this.handleClick2 = this.handleClick2.bind(this)
     this.showRegpopup = this.showRegpopup.bind(this)
+    this.showMenu = this.showMenu.bind(this)
     this.CloseReg = this.CloseReg.bind(this)
     
  
@@ -40,6 +43,22 @@ export default class Header extends Component {
     document.querySelector('.reg_popup').style.display = 'none'
   }
   
+  showMenu(){
+    if(this.state.open<1){
+      document.querySelector('.header_bottom').style.display = 'block'
+      document.querySelector('.s1').style.display = 'none'
+      document.querySelector('.s3').style.display = 'none'
+      this.setState({open:1})
+    }
+    else{
+      document.querySelector('.header_bottom').style.display = 'none'
+      document.querySelector('.s1').style.display = 'block'
+      document.querySelector('.s3').style.display = 'block'
+      this.setState({open:0}) 
+    }
+    
+  }
+  
   render() {
     
       
@@ -60,6 +79,12 @@ export default class Header extends Component {
                     <div className="header_top-user">
                       <div className="heder_top-enter">Войти</div>
                       <div className="heder_top-registration" onClick={this.showRegpopup}>Регистрация</div>
+                      <div className="burger" onClick={this.showMenu}>
+                        <span className='s1'></span>
+                        <span className='s2'></span>
+                        <span className='s3'></span>
+                      </div>
+
                     </div>
               </div>
                 
