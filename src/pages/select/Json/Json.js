@@ -14,7 +14,7 @@ export default class Json extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://185.167.97.69:10101/api/organizations")
+    fetch("http://63.250.58.86:10101/api/organizations")
       .then(res => res.json())
       .then(
         (result) => {

@@ -10,7 +10,7 @@ export default class DriverJson extends Component {
         };
       }
       componentDidMount() {
-        fetch("http://185.167.97.69:10101/api/drivers")
+        fetch("http://63.250.58.86:10101/api/drivers")
           .then(res => res.json())
           .then(
             (result) => {

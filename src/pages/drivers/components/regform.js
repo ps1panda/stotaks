@@ -24,7 +24,7 @@ export default class Regform extends Component {
         //this.Action = this.Action.bind(this)
     };
     TakeId (){
-        fetch("http://185.167.97.69:10101/api/drivers")
+        fetch("http://63.250.58.86:10101/api/drivers")
         .then(res => res.json())
         .then(
           (result) => {
@@ -58,7 +58,7 @@ export default class Regform extends Component {
             "email": this.state.email
          }
       
-        fetch("http://185.167.97.69:10101/api/drivers", {
+        fetch("http://63.250.58.86:10101/api/drivers", {
             method: "POST",
             headers: {
                
