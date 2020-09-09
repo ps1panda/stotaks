@@ -37,8 +37,12 @@
         width: 90% !important;
         margin: 0 auto !important;
     }
+    .heder_top-registration,
+    .heder_top-enter {
+        font-size: 0px;
+    }
     .heder_top-registration {
-        display: none;
+        margin-left: 30px;
     }
     .header_top .wrap {
         padding: 2vw 3vw !important;
@@ -156,5 +160,106 @@
     footer .bottom>div:nth-child(1) {
         order: 4;
         color: #F1EEE4 !important;
+    }
+    .news {
+        flex-direction: column !important;
+    }
+    .news_wrap {
+        padding-bottom: 5vw !important;
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    .news {
+        padding: 7vw !important;
+        box-sizing: border-box !important;
+    }
+    .news_date {
+        order: 2 !important;
+        margin: 1vh 0 1vh !important;
+        width: 100% !important;
+    }
+    .news_page {
+        padding-top: 12vw !important;
+    }
+    .news_page h1 {
+        width: 90%;
+        margin: 8vw auto;
+    }
+    h1.zag {
+        font-size: 6vw !important;
+    }
+    .about_page,
+    .partners_page,
+    .drivers_page {
+        width: 90% !important;
+        max-width: 90% !important;
+        padding-top: 13vw !important;
+    }
+    .about_page .wrap,
+    .partners_page .wrap,
+    .drivers_page .wrap {
+        width: 100% !important;
+    }
+    .about_page h1,
+    .partners_page h1,
+    .drivers_page h1 {
+        width: 90% !important;
+        margin: 8vw auto !important;
+    }
+    .fib_text {
+        vertical-align: top;
+        display: inline-block;
+        width: 100% !important;
+    }
+    .register_wrap {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .register_wrap_form {
+        margin: 0 auto !important;
+        order: 2 !important;
+        width: 90% !important;
+    }
+    .driver_register_page {
+        padding-top: 13vw;
+    }
+    .register_wrap_info {
+        order: 1 !important;
+        width: 90% !important;
+        box-sizing: border-box !important;
+        margin: 5% auto !important;
+        padding: 10px !important;
+    }
+    .register_wrap_info .mini_logo {
+        display: none;
+    }
+    .register_wrap_info_pic {
+        margin: 20px 0px 20px 10px !important;
+        text-align: center !important;
+        float: none !important;
+        width: 40% !important;
+    }
+    .register_wrap_info_title {
+        position: absolute;
+        top: 38vw;
+        left: 47%;
+        font-size: 7vw !important;
+        line-height: 100% !important;
+    }
+    .register_wrap_info_desc {
+        margin-top: 39px;
+        width: 80%;
+        margin: 4vw auto;
+    }
+    .register_wrap_form {
+        margin: 0 auto !important;
+        order: 2 !important;
+        width: 90% !important;
+        padding: 5% !important;
+        box-sizing: border-box !important;
+        background: #fff !important;
+    }
+    .filter {
+        display: none;
     }
 }
