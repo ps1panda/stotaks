@@ -228,7 +228,8 @@
         width: 90% !important;
     }
     .driver_register_page,
-    .select_page {
+    .select_page,
+    .partner_register_page {
         padding-top: 13vw;
     }
     .register_wrap_info {
@@ -246,6 +247,9 @@
         text-align: center !important;
         float: none !important;
         width: 40% !important;
+    }
+    .register_wrap_info_pic img {
+        width: 100% !important;
     }
     .register_wrap_info_title {
         position: absolute;
