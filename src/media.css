@@ -190,20 +190,27 @@
     }
     .about_page,
     .partners_page,
-    .drivers_page {
+    .drivers_page,
+    .select_page {
         width: 90% !important;
         max-width: 90% !important;
         padding-top: 13vw !important;
     }
     .about_page .wrap,
     .partners_page .wrap,
-    .drivers_page .wrap {
+    .drivers_page .wrap,
+    .select_page .wrap {
         width: 100% !important;
+        max-width: 100% !important;
     }
     .about_page h1,
     .partners_page h1,
     .drivers_page h1 {
         width: 90% !important;
+        margin: 8vw auto !important;
+    }
+    .select_page h1 {
+        width: 100% !important;
         margin: 8vw auto !important;
     }
     .fib_text {
@@ -220,7 +227,8 @@
         order: 2 !important;
         width: 90% !important;
     }
-    .driver_register_page {
+    .driver_register_page,
+    .select_page {
         padding-top: 13vw;
     }
     .register_wrap_info {
@@ -259,7 +267,57 @@
         box-sizing: border-box !important;
         background: #fff !important;
     }
-    .filter {
+    .filters {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: auto;
+    }
+    .select_wrap {
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start;
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+    .filter,
+    .maps {
+        width: 100% !important;
+    }
+    .maps {
         display: none;
     }
+    .td_phone {
+        display: none;
+    }
+    .select_list tr {
+        display: block;
+        background: #F8F3E5;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        border-top: 1px solid #BCB8AA;
+        border-bottom: 1px solid #BCB8AA;
+    }
+    .select_list tr:nth-child(even) {
+        background: #fff;
+    }
+    .select_page {
+        margin: 0 auto !important;
+    }
+    .select_list {
+        width: 100% !important;
+        padding: 0px !important;
+        margin-bottom: 100px;
+    }
+    td.td_title {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        padding: 0px !important;
+    }
+}
+
+.td_groupNumber,
+.td_rating {
+    display: none;
 }
