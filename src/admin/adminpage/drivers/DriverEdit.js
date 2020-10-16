@@ -4,11 +4,7 @@ export default class DriverEdit extends Component {
   render() {
     return (
         <div className="wrap_admin_box">
-            <div className="bread">
-                <a href="/admin"> Главная страница Админ панели</a>
-                <a href="/admin/driverlist">Анкеты водителей</a> 
-                <span>Редактирование анкеты водителя</span>
-            </div>
+        
             <div className="wrap_admin_box__inner driveredit">
                 <h1>Редактирование анкеты водителя</h1>
 

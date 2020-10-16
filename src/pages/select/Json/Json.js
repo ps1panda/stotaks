@@ -10,7 +10,9 @@ export default class Json extends Component {
       isLoaded: false,
       items: [],
       kind: '',
-      kinds:['taxopark','austosalon','wash','documents','Equipment','service','hostels','autocredit','autostrah','views']
+      kinds:['taxipool','motorshow','carwash','prertip','Equipment','maintenance','hostel','loans','insurance','preparation'],
+      type:'',
+      orgid:''
     };
   }
   componentDidMount() {
@@ -52,11 +54,16 @@ export default class Json extends Component {
                 <td className='td_title'>
                 
                 
-           
-                <a href={'../organizations/'+item.kind+'/'+ item.id}>
+                <Link to={{
+                  pathname:'../organizations/'+this.state.kinds[item.kind - 1]+'/'+ item.id,
+                  org_title:item.title,
+                  orgid:item.id,
+                  orgkind:this.state.kinds[item.kind - 1]
+}                }>
+               
                 <img src={logo} className='td_title__logo' alt=""/>
                   {item.title}
-                  </a>
+                  </Link>
                 
                   
                 </td>

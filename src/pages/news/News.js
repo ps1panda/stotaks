@@ -5,10 +5,7 @@ export default class News extends Component {
         return (
             <div className="news_page">
                 <div className="wrap">
-                    <div className="bread">
-                        <a href="/"> Главная</a>
-                        <span>Новости такси</span>
-                    </div>
+              
 
                     <h1 className='zag'>Новости такси</h1>
                     <div className="news_wrap">

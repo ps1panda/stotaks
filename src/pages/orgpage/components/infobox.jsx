@@ -11,7 +11,7 @@ export default class InfoBox extends Component {
         };
       }
       componentDidMount() {
-        fetch("http://46.17.43.203:10101/api/form/taxipool/1345863141")
+        fetch("http://46.17.43.203:10101/api/form/"+this.props.orgkind +'/'+this.props.idlink)
           .then(res => res.json())
           .then(
             (result) => {
@@ -19,7 +19,7 @@ export default class InfoBox extends Component {
                 isLoaded: true,
                 items: result
               });
-    
+              console.log(result)
             },
             (error) => {
               this.setState({
@@ -39,7 +39,7 @@ export default class InfoBox extends Component {
       //const pp = items.filter(item => this.props.kind == item.kind)
       
       return (
-        123
+        console.log(this.props.idlink)
       );
    
    

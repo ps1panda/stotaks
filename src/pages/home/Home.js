@@ -10,7 +10,18 @@ import Icon7 from '../../images/Icon7.svg'
 import Icon8 from '../../images/Icon8.svg'
 import Icon9 from '../../images/Icon9.svg'
 import Icon10 from '../../images/Icon10.svg'
+import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 export default class Home extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            kindfilter: '',
+            kind:'',
+            kinds:['taxipool','motorshow','carwash','prertip','Equipment','maintenance','hostel','loans','insurance','preparation']
+        };
+       
+    };
     render() {
         return (
             <div className="home_page">
@@ -22,84 +33,144 @@ export default class Home extends Component {
                     <div className="boxes">
                         <div className="boxes_wrap">                        
                             <div className="box">
-                                <a href='../select/taxopark'>
+                                <Link to={{
+                                    pathname:'select/taxopark',
+                                    kindfilter: 'taxopark',
+                                    kind:'1',
+                                    title:'Выбор таксопарка'
+                                    }} >
+                                
                                 <div className="box_pic">
                                     <img src={Icon1} alt=""/>
                                 </div>
                                 <div className="box_text">Выбор таксопарка </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="box">
-                                <a href='../select/equipment'>
+                            <Link to={{
+                                    pathname:'select/equipment',
+                                    kindfilter: 'equipment',
+                                    kind:'5',
+                                    title:'Оборудование автомобилей такси'
+                                    }} >
                                 <div className="box_pic">
                                     <img src={Icon2} alt=""/>
                                 </div>
                                 <div className="box_text">Оборудование автомобилей такси </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="box">
-                                <a href='../select/service'>
+                            <Link to={{
+                                    pathname:'select/Maintenance',
+                                    kindfilter: 'service',
+                                    kind:'6',
+                                    title:'Обслуживание автомобилей такси'
+                                    }} >   
+                                
                                 <div className="box_pic">
                                     <img src={Icon3} alt=""/>
                                 </div>
                                 <div className="box_text">Обслуживание автомобилей такси</div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="box">
-                                <a href='../select/wash'>
+                            <Link to={{
+                                    pathname:'select/carwash',
+                                    kindfilter: 'wash',
+                                    kind:'3',
+                                    title:'Мойка автомобилей такси'
+                                    }} >
+                                
                                 <div className="box_pic">
                                     <img src={Icon4} alt=""/>
                                 </div>
                                 <div className="box_text">Мойка автомобилей такси</div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="box">
-                                <a href='../select/view'>
+                            <Link to={{
+                                    pathname:'select/pretrip',
+                                    kindfilter: 'view',
+                                     kind:'4',
+                                     title:'Предрейсовые осмотры'
+                                    }} >
+                                
                                 <div className="box_pic">
                                     <img src={Icon5} alt=""/>
                                 </div>
                                 <div className="box_text">Предрейсовые осмотры </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="box">
-                                <a href='../select/autosalon'>
+                                <Link to={{
+                                    pathname:'select/motorshow',
+                                    kindfilter: 'autosalon',
+                                    kind:'2',
+                                    title:'Выбор автосалона'
+                                    }} >
+                                
                                 <div className="box_pic">
                                     <img src={Icon6} alt=""/>
                                 </div>
                                 <div className="box_text">Выбор автосалона</div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="box">
-                                <a href='../select/autocredit'>
+                                <Link to={{
+                                    pathname:'select/loans',
+                                    kindfilter: 'autocredit',
+                                    kind:'8',
+                                    title:'Автокредитование и автолизинг'
+                                    }} >
+                                
                                 <div className="box_pic">
                                     <img src={Icon7} alt=""/>
                                 </div>
                                 <div className="box_text">Автокредитование и автолизинг</div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="box">
-                                <a href='../select/autostrah'>
+                                <Link to={{
+                                    pathname:'select/insurance',
+                                    kindfilter: 'autostrah',
+                                    kind:'9',
+                                    title:'Услуги автострахования'
+                                    }} >
+                                
                                 <div className="box_pic">
                                     <img src={Icon8} alt=""/>
                                 </div>
                                 <div className="box_text">Услуги автострахования </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="box">
-                                <a href='../select/documents'>
+                                <Link to={{
+                                    pathname:'select/preparation',
+                                    kindfilter: 'documents',
+                                    kind:'10',
+                                    title:'Оформление документов'
+                                    }} >
+                                
                                 <div className="box_pic">
                                     <img src={Icon9} alt=""/>
                                 </div>
                                 <div className="box_text">Оформление документов </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="box">
-                                <a href='../select/hostels'>
+                                <Link to={{
+                                    pathname:'select/hotel',
+                                    kindfilter: 'hostels',
+                                    kind:'7',
+                                    title:'Общежития и хостелы'
+                                    }} >
+                               
                                 <div className="box_pic">
                                     <img src={Icon10} alt=""/>
                                 </div>
                                 <div className="box_text">Общежития и хостелы </div>
-                                </a>
+                               
+                                </Link>
                             </div>
                         </div>
                     </div>

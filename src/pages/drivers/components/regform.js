@@ -15,37 +15,16 @@ export default class Regform extends Component {
             dayOfBirth:'',
             phone:'',
             email:'',
+            dr_pass_repeat:'',
             error: null,
             isLoaded: false,
             items: [],
         };
         this.FORMsend = this.FORMsend.bind(this)
-        this.TakeId = this.TakeId.bind(this)
+      //  this.TakeId = this.TakeId.bind(this)
         //this.Action = this.Action.bind(this)
     };
-    TakeId (){
-        fetch("http://46.17.43.203:10101/api/drivers")
-        .then(res => res.json())
-        .then(
-          (result) => {
-            this.setState({
-              isLoaded: true,
-              items: result
-            });
-            const { error, isLoaded, items } = this.state;
-            console.log(items)
-            
-            const pp = items.filter(item => this.state.email == item.email)
-            console.log(pp)
-          },
-          (error) => {
-            this.setState({
-              isLoaded: true,
-              error
-            });
-          }
-        )
-    }
+    
     FORMsend (){
 
         var data = {
@@ -57,6 +36,11 @@ export default class Regform extends Component {
             "phone": this.state.phone,
             "email": this.state.email
          }
+         var data2 ={
+          "email": this.state.email,
+          "password":this.state.dr_pass_repeat,
+          "passwordConfirm":this.state.dr_pass
+         }
       
         fetch("http://46.17.43.203:10101/api/drivers", {
             method: "POST",
@@ -67,9 +51,18 @@ export default class Regform extends Component {
             body:  JSON.stringify(data)
           })
          .then(function(data){ 
-
-         });
-       this.TakeId()  
+          fetch("http://46.17.43.203:10101/api/account", {
+            method: "POST",
+            headers: {
+               
+                'Content-Type': 'application/json'
+              },
+            body:  JSON.stringify(data2)
+          })
+         .then(function(data2){ 
+          console.log(data2)
+         }); 
+         }); 
     }
   render() {
       
@@ -111,11 +104,11 @@ export default class Regform extends Component {
 
                 <p>
                     <label htmlFor="dr_pass">Пароль</label>
-                    <input type="password" name="driver_password" id="dr_pass" placeholder="Придумайте пароль"/>
+                    <input type="password" name="driver_password" id="dr_pass"  onChange={(e) => this.setState({dr_pass: e.target.value})}  placeholder="Придумайте пароль"/>
                 </p>
                 <p>
                     <label htmlFor="dr_pass_repeat">Повторить пароль</label>
-                    <input type="password" name="driver_password_repeat" id="dr_pass_repeat" placeholder="Введите пароль повторно"/>
+                    <input type="password" name="driver_password_repeat" id="dr_pass_repeat"  onChange={(e) => this.setState({dr_pass_repeat: e.target.value})} placeholder="Введите пароль повторно"/>
                 </p>
                 <span className="requery_info">
                     <span>*</span>поля, обязательные для заполнения

@@ -37,10 +37,7 @@ export default class SelectOrg extends Component {
     return (
       <div> 
           <div className="wrap">
-          <div className="bread">
-            <a href="/"> Главная</a>
-            <span>{this.state.page_title}</span>
-          </div>
+         
                   <div className="partner_anketa_info">
             Выберите интересующий Вас блок и заполните анкету Партнера
                           </div>

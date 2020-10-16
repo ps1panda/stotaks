@@ -4,10 +4,7 @@ export default class AboutList extends Component {
     render() {
         return (
             <div className="wrap_admin_box">
-                <div className="bread">
-                    <a href="/admin"> Главная страница Админ панели</a>
-                    <span>О сообществе</span>
-                </div>
+              
                 <div className="wrap_admin_box__inner">
                     <h1>О сообществе</h1>
                     <div className="section">

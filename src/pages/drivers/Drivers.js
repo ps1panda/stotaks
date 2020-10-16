@@ -7,10 +7,7 @@ export default class Drivers extends Component {
         return (
             <div className="drivers_page">
                 <div className="wrap">
-                    <div className="bread">
-                        <a href="/"> Главная</a>
-                        <span>Водителям</span>
-                    </div>
+         
 
                     <h1 className='zag'>Водителям</h1>
                     <div className="drivers_wrap">

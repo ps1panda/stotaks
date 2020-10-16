@@ -7,10 +7,7 @@ export default class Partners extends Component {
         return (
             <div className="partners_page">
                 <div className="wrap">
-                    <div className="bread">
-                        <a href="/"> Главная</a>
-                        <span>Партнерам</span>
-                    </div>
+          
 
                     <h1 className='zag'>Партнерам</h1>
                     <div className="partners_wrap">

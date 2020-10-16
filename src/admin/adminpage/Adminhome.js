@@ -18,10 +18,7 @@ updateData = (value) => {
   render() {
     return (
       <div className="wrap_admin_box">
-        <div className="bread">
-            <a href="/admin"> Главная страница Админ панели</a>
-            <span>{this.props.title}</span>
-        </div>
+        
         <div className="wrap_admin_box__inner">
           <h1>Главная страница</h1>
           <div className="section">

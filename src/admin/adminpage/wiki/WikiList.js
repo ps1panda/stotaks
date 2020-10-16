@@ -4,10 +4,7 @@ export default class WikiList extends Component {
   render() {
     return (
         <div className="wrap_admin_box wikilist">
-            <div className="bread">
-                <a href="/admin"> Главная страница Админ панели</a>
-                <span>Энциклопедия такси</span>
-            </div>
+            
             <div className="wrap_admin_box__inner">
                 <div className="top_info">
                 <h1>Энциклопедия такси</h1>

@@ -11,7 +11,7 @@ export default class OrgType extends Component {
     
     };
   render() {
-      if(this.state.orgype =='1'){
+      if(this.state.orgype ==='1'){
         return (
             <Taxipool />
           );

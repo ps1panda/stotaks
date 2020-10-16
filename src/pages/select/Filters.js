@@ -108,9 +108,7 @@ export default class Filters extends Component {
                     <Deposite />
                    
                 </div>
-                <div className='agreg filter_box'>
-                        <Agregators />
-                </div>
+     
                 <div className='dispech filter_box'>
                     <Dispatcher />
                 </div>

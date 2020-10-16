@@ -8,12 +8,12 @@ export default class Ofdiler extends Component {
         
         
         <p>
-            <input type="checkbox" name="" id=""/>
-            <label htmlFor="">да</label>
+            <input type="checkbox" name="" value="1" id="ofd1"/>
+            <label htmlFor="ofd1">да</label>
         </p>
         <p>
-            <input type="checkbox" name="" id=""/>
-            <label htmlFor="">нет</label>
+            <input type="checkbox" name="" value="0" id="ofd2"/>
+            <label htmlFor="ofd2">нет</label>
         </p>
     
         </fieldset>

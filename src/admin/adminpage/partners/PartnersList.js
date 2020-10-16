@@ -4,10 +4,7 @@ export default class PartnersList extends Component {
     render() {
         return (
             <div className="wrap_admin_box">
-                <div className="bread">
-                    <a href="/admin"> Главная страница Админ панели</a>
-                    <span>Анкеты организаций</span>
-                </div>
+          
                 <div className="wrap_admin_box__inner">
                     <h1>Анкеты организаций</h1>
 

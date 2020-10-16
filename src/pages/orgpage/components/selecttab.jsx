@@ -15,17 +15,17 @@ export default class SelectTab extends Component {
        
     };
   render() {
-      if(this.props.tabindex == '1'){
+      if(this.props.tabindex === '1'){
         return (
             <MapOrg />
           );
       }
-      if(this.props.tabindex == '2'){
+      if(this.props.tabindex === '2'){
           return (
               <Reviews />
           )
       }
-      if(this.props.tabindex == '3'){
+      if(this.props.tabindex === '3'){
         return (
             <NewRewiew />
         )

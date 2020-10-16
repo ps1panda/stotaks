@@ -5,10 +5,7 @@ export default class DriverList extends Component {
     render() {
         return (
             <div className="wrap_admin_box">
-                <div className="bread">
-                    <a href="/admin"> Главная страница Админ панели</a>
-                    <span>Анкеты водителей</span>
-                </div>
+              
                 <div className="wrap_admin_box__inner driverlist">
                     <h1>Анкеты водителей</h1>
                     <table border="0">

@@ -82,15 +82,15 @@ export default class Auto extends Component {
                       <fieldset>
                           <legend className='gray_an'>Комфорт + </legend>
                           <p>
-                          <input type="checkbox" value="Toyota Camry" name="" id="kp4"/>
+                          <input type="checkbox" value="Toyota Camry" name="" id="kp1"/>
                           <label htmlFor="kp1">Toyota Camry</label>
                           </p>
                           <p>
-                              <input type="checkbox" value="Kia Optima" name="" id="kp4"/>
+                              <input type="checkbox" value="Kia Optima" name="" id="kp2"/>
                               <label htmlFor="kp2">Kia Optima</label>
                           </p>
                           <p>
-                              <input type="checkbox" value="Hyundai Sonata" name="" id="kp4"/>
+                              <input type="checkbox" value="Hyundai Sonata" name="" id="kp3"/>
                               <label htmlFor="kp3">Hyundai Sonata</label>
                           </p>  
                           <p>

@@ -32,10 +32,7 @@ export default class Driver_anketa extends Component {
     return (
       <div className={this.state.page_name}>
         <div className="wrap">
-          <div className="bread">
-            <a href="/"> Главная</a>
-            <span>{this.state.page_title}</span>
-          </div>
+     
           <h1 className='zag'>{this.state.page_title}</h1>
           <div className="driver_anketa_info">
             Заполните анкету Водителя - предоставление максимально полных и достоверных сведений ускорит Ваше трудоустройство у партнеров Столичного таксомоторного сообщества

@@ -373,6 +373,10 @@
     .show_filter {
         display: block !important;
     }
+    .filter_title_mob,
+    .filter_box_mobile {
+        display: flex !important;
+    }
 }
 
 .td_groupNumber,

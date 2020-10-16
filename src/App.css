@@ -57,6 +57,7 @@ h1.zag {
 .btn_gray.act_btn {
     background: var(--main-yellow-color);
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .alt_btn {
@@ -460,6 +461,7 @@ fieldset {
     padding-bottom: 17px;
     margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
 }
 
 .td_phone::before {
@@ -575,6 +577,7 @@ legend:after {
 
 .filter_box_mobile {
     width: 100%;
+    display: none;
 }
 
 .show_filter span {
@@ -592,7 +595,7 @@ legend:after {
 }
 
 .filter_title_mob {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 39px;

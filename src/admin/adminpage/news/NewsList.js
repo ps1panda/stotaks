@@ -4,10 +4,7 @@ export default class NewsList extends Component {
   render() {
     return (
         <div className="wrap_admin_box">
-            <div className="bread">
-                <a href="/admin"> Главная страница Админ панели</a>
-                <span>Новости такси</span>
-            </div>
+
             <div className="wrap_admin_box__inner">
                 <div className="news_controls">
                     <h1>Новости такси</h1>

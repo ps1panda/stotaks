@@ -20,10 +20,7 @@ export default class Partnerregister extends Component {
           return (
               <div className={this.state.page_name}>
                   <div className="wrap">
-                      <div className="bread">
-                          <a href="/"> Главная</a>
-                          <span>{this.state.page_title}</span>
-                      </div>    
+                    
                       <FormViewd />
                     </div>    
                  

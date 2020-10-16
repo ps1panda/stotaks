@@ -5,7 +5,7 @@ export default class Citizenship extends Component {
     return (
         <fieldset>
         <legend>Гражданство</legend>
-        <input type="radio" name="fieldset1" value='РФ' id="fieldset11" checked />
+        <input type="radio" name="fieldset1" value='РФ' id="fieldset11"  />
         <label htmlFor="fieldset11">РФ</label>
         <input type="radio" name="fieldset1" value='Беларусь' id="fieldset12" />
         <label htmlFor="fieldset12">Беларусь</label>

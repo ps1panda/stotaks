@@ -11,7 +11,7 @@ export default class Sidebar extends Component {
         };
       }
       componentDidMount() {
-        fetch("http://46.17.43.203:10101/api/form/taxipool/1345863141")
+        fetch("http://46.17.43.203:10101/api/form/"+this.props.orgkind +'/'+this.props.idlink)
           .then(res => res.json())
           .then(
             (result) => {

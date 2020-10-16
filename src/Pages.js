@@ -12,17 +12,8 @@ import Driverregister from './pages/drivers/Driverregister'
 import Partnerregister from './pages/partners/Partnerregister'
 import Driver_anketa from './pages/drivers/Driver_anketa'
 import Partner_anketa from './pages/partners/Partner_anketa'
-import Taxopark from './pages/select/Taxopark.js'
-import Autocredit from './pages/select/Autocredit.js'
-import Autosalon from './pages/select/Autosalon.js'
-import Autostrah from './pages/select/Autostrah.js'
-import Documents from './pages/select/Documents.js'
-import Equipment from './pages/select/Equipment.js'
-import Hostels from './pages/select/Hostels.js'
-import Service from './pages/select/Service.js'
-import View from './pages/select/View.js'
-import Wash from './pages/select/Wash.js'
 import Layout from './pages/partners/anketas/layout'
+import OrgPage from './pages/select/views/OrgPage'
 
 import Adminindex from './admin/index'
 import OrgPageLayout from './pages/orgpage/orgpagelayout';
@@ -43,18 +34,9 @@ export default class Pages extends Component {
                 <Route exact path='/driver_anketa' component={Driver_anketa} />
                 <Route exact path='/partner_anketa' component={Partner_anketa} />                
                 <Route exact path='/admin/' component={Adminindex} />
-                <Route exact path='/select/taxopark' component={Taxopark} />
-                <Route exact path='/select/autocredit' component={Autocredit} />
-                <Route exact path='/select/autosalon' component={Autosalon} />
-                <Route exact path='/select/autostrah' component={Autostrah} />
-                <Route exact path='/select/documents' component={Documents} />
-                <Route exact path='/select/equipment' component={Equipment} />
-                <Route exact path='/select/hostels' component={Hostels} />
-                <Route exact path='/select/service' component={Service} />
-                <Route exact path='/select/view' component={View} />
-                <Route exact path='/select/wash' component={Wash} />
                 <Route exact path='/ankets/:ankets' component={Layout} />
                 <Route exact path='/organizations/:kind/:organization' component={OrgPageLayout} />
+                <Route exact path='/select/:kind' component={OrgPage} />
                 
             </Switch>
           </Router>  
