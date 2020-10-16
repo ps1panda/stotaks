@@ -26,13 +26,13 @@ export default class Header extends Component {
 
   handleClick1(){
     this.setState({
-      link:'driver_register'
+      link:'../driver_register'
     })
     document.querySelector('.next_page').classList.add('act')
   }
   handleClick2(){
     this.setState({
-      link:'partner_register'
+      link:'../partner_register'
     })
     document.querySelector('.next_page').classList.add('act')
   }

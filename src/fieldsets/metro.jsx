@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-
+import search from '../images/lupa.png'
 export default class Metro extends Component {
   render() {
     return (
-        <fieldset>
+        <fieldset className='subway filter_box'>
         <legend>Метро, МЦК</legend>
-        <input type="text" name="" id="" placeholder="Введите станцию метро, МЦК" />
+        <img src={search} alt=""/>
+        <input type="text" name="" id="subwaysearch" placeholder="Введите станцию метро, МЦК" />
       </fieldset>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
+import logo from '../../../images/Taksi_Den_i_Noch_1x 1.png'
 
 export default class Json extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export default class Json extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://63.250.58.86:10101/api/organizations")
+    fetch("http://46.17.43.203:10101/api/organizations")
       .then(res => res.json())
       .then(
         (result) => {
@@ -53,7 +53,10 @@ export default class Json extends Component {
                 
                 
            
-                <a href={'../organizations/'+ item.id}>{item.title}</a>
+                <a href={'../organizations/'+item.kind+'/'+ item.id}>
+                <img src={logo} className='td_title__logo' alt=""/>
+                  {item.title}
+                  </a>
                 
                   
                 </td>

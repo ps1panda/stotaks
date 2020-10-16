@@ -18,13 +18,17 @@ import Akpp from '../../fieldsets/akpp.jsx';
 import Fuel from '../../fieldsets/fuel.jsx';
 import CarName from '../../fieldsets/carname.jsx';
 import Ofdiler from '../../fieldsets/ofdiler.jsx';
+import close from '../../images/Close.png'
 export default class Filters extends Component {
     componentDidMount() {
         $(function(){
             var hide = 0;
-            $('.filter_title').click(function(){
+            $('.filter_title, legend').click(function(){
                 $(this).parent().toggleClass('hidden_filter')
                 
+            })
+            $('.filter_title_mob img').click(function(){
+                $('.filters_wrap').hide()
             })
 
         })
@@ -32,7 +36,11 @@ export default class Filters extends Component {
   render() {
       if(this.props.kindfilter === 'taxopark'){
         return (
-            <div> 
+            <div className='filters_wrap'> 
+                <div className="filter_title_mob">
+                    <h2>Фильтры</h2>
+                    <img src={close} alt=""/>
+                </div>
                 <p>
                 <input type="checkbox" name="" id="use_anketa"/>
                 <label htmlFor="use_anketa">Использовать анкетные данные</label>
@@ -111,10 +119,8 @@ export default class Filters extends Component {
       }
       if(this.props.kindfilter === 'autosalon'){
         return (
-            <div> 
-                <p className='clearfilter'>
-                Сбросить фильтры
-                </p>
+            <div className='filters_wrap'> 
+              
                <Metro />
                 <District />
                         <div className='carname filter_box'>
@@ -153,7 +159,7 @@ export default class Filters extends Component {
     }
     if(this.props.kindfilter === 'wash'){
         return (
-            <div> 
+            <div className='filters_wrap'> 
                
                 <p className='clearfilter'>
                 Сбросить фильтры
@@ -247,7 +253,7 @@ export default class Filters extends Component {
     }
     if(this.props.kindfilter === 'autocredit'){
         return (
-            <div> 
+            <div className='filters_wrap'> 
                
                 <p className='clearfilter'>
                 Сбросить фильтры
@@ -298,7 +304,7 @@ export default class Filters extends Component {
                                     </p>
                                     <p>
                                         <input type="checkbox" name="" id=""/>
-                                        <label htmlFor="">не предъявляются(продать душу дъяволу)</label>
+                                        <label htmlFor="">не предъявляются</label>
                                     </p>
                 
                                 
@@ -411,7 +417,7 @@ export default class Filters extends Component {
     }
     if(this.props.kindfilter === 'autostrah'){
         return (
-            <div> 
+            <div className='filters_wrap'> 
 
                 <p className='clearfilter'>
                 Сбросить фильтры
@@ -511,7 +517,7 @@ export default class Filters extends Component {
     }
     if(this.props.kindfilter === 'view'){
         return (
-            <div> 
+            <div className='filters_wrap'> 
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
@@ -596,7 +602,7 @@ export default class Filters extends Component {
     }
     if(this.props.kindfilter === 'equipment'){
         return (
-            <div> 
+            <div className='filters_wrap'> 
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
@@ -718,7 +724,7 @@ export default class Filters extends Component {
     }
     if(this.props.kindfilter === 'service'){
         return (
-            <div> 
+            <div className='filters_wrap'> 
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
@@ -816,7 +822,7 @@ export default class Filters extends Component {
     }
     if(this.props.kindfilter === 'hostels'){
         return (
-            <div> 
+            <div className='filters_wrap'> 
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>
@@ -892,7 +898,7 @@ export default class Filters extends Component {
     }
     if(this.props.kindfilter === 'documents'){
         return (
-            <div> 
+            <div className='filters_wrap'> 
                 <p className='clearfilter'>
                 Сбросить фильтры
                 </p>

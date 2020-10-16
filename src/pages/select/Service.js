@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { YMaps, Map } from 'react-yandex-maps';
 import Filters from './Filters.js'
 import Json from './Json/Json.js';
+import SearchByName from './SearchByName.jsx';
 
 export default class Service extends Component {
     constructor(props) {
@@ -18,19 +19,13 @@ export default class Service extends Component {
         return (
             <div className="service_page select_page">
                 <div className="wrap">
-                    <div className="bread">
-                        <a href="/"> Главная</a>
-                        <span>Обслуживание автомобилей такси</span>
-                    </div>
+                   
 
                     <h1 className='zag'>Обслуживание автомобилей такси</h1>
                     
                     <div className="service_wrap select_wrap">
                         <div className='filter'>
-                            <form action="" className="searchform">
-                                <h3>Поиск по названию</h3>
-                                <input id='searchinput' type="text" placeholder='Введите название таксопарка'/>
-                            </form>
+                            <SearchByName />
                             <form action="" className="filters">
                             <h3>Поиск по фильтрам</h3>
                             <Filters kindfilter={this.state.kindfilter}/>

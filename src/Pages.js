@@ -54,7 +54,7 @@ export default class Pages extends Component {
                 <Route exact path='/select/view' component={View} />
                 <Route exact path='/select/wash' component={Wash} />
                 <Route exact path='/ankets/:ankets' component={Layout} />
-                <Route exact path='/organizations/:organization' component={OrgPageLayout} />
+                <Route exact path='/organizations/:kind/:organization' component={OrgPageLayout} />
                 
             </Switch>
           </Router>  

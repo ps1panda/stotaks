@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { YMaps, Map } from 'react-yandex-maps';
 import Filters from './Filters.js'
 import Json from './Json/Json.js';
+import SearchByName from './SearchByName.jsx';
+import Selectview from './views/selectview.jsx';
 
 export default class Autocredit extends Component {
     constructor(props) {
@@ -23,15 +25,13 @@ export default class Autocredit extends Component {
                     
                     <div className="Autocredit_wrap select_wrap">
                         <div className='filter'>
-                            <form action="" className="searchform">
-                                <h3>Поиск по названию</h3>
-                                <input id='searchinput' type="text" placeholder='Введите название таксопарка'/>
-                            </form>
+                         <SearchByName />
                             <form action="" className="filters">
                             <h3>Поиск по фильтрам</h3>
                             <Filters kindfilter={this.state.kindfilter}/>
                             </form>
                         </div>
+                        <Selectview />
                         <div className='select_list'>
 
                         < Json kind={this.state.kind} />

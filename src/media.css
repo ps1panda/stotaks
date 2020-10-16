@@ -1,3 +1,9 @@
+@media(max-width:1250px) {
+    .wrap {
+        max-width: 90% !important;
+    }
+}
+
 @media(max-width:980px) {
     .header_top-text {
         display: none;
@@ -272,10 +278,22 @@
         background: #fff !important;
     }
     .filters {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .filters_wrap {
         display: none;
         position: fixed;
         width: 100%;
-        height: auto;
+        background: #fff;
+        z-index: 99999999;
+        top: 0px;
+        left: 0px;
+        padding: 6vw;
+        box-sizing: border-box;
+        overflow: scroll;
+        height: 100vh;
     }
     .select_wrap {
         display: flex;
@@ -291,8 +309,23 @@
     .maps {
         display: none;
     }
-    .td_phone {
+    .td_email {
         display: none;
+    }
+    table td {
+        padding-right: 18vw !important;
+        padding-left: 16px !important;
+    }
+    .selectview_box {
+        display: flex !important;
+    }
+    .td_phone::before {
+        left: 0px !important;
+        background: url(images/yel_phone.png) no-repeat center / cover !important;
+    }
+    .td_website::before {
+        left: 0px !important;
+        background: url(images/yel_web.png) no-repeat center / cover !important;
     }
     .select_list tr {
         display: block;
@@ -318,6 +351,27 @@
         display: block;
         box-sizing: border-box;
         padding: 0px !important;
+    }
+    .wrap {
+        max-width: 100% !important;
+    }
+    .reg_popup {
+        padding: 6vw !important;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+    header [type="radio"]:checked+label,
+    header [type="radio"]:not(:checked)+label {
+        padding: 110px 20px 30px !important;
+    }
+    .select_box a {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+    }
+    .show_filter {
+        display: block !important;
     }
 }
 

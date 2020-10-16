@@ -297,3 +297,7 @@ header [type="radio"]:checked+label {
 .burger {
     display: none;
 }
+
+.reg_popup [type="radio"]:checked+label:after {
+    display: none;
+}
